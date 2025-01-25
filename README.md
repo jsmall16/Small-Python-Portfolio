@@ -15,7 +15,7 @@ The purpose of this repository is to highlight my ability to:
    - Train basic machine learning models 
 
 
-## Repository Structure
+## Structure
 
 This repository is organized into the following folders: 
 
