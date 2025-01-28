@@ -8,10 +8,10 @@ This repository showcases programming skills I developed as a student at the Uni
 The purpose of this repository is to highlight my ability to:
 
    - Create advanced data visualizations to communicate insights
-   - Use data wrangling techniques to clean and transform unitdy datasets
+   - Use data wrangling techniques to clean and transform untidy datasets
    - Work with intermediate data structures
    - Query databases to extract meaningful information
-   - Apply text and imaging process techniques for ehanced data analysis
+   - Apply text and image processing techniques for enhanced data analysis
    - Train basic machine learning models 
 
 
@@ -28,4 +28,4 @@ This repository is organized into the following folders:
    - Image Processing
    - Machine Learning
 
-The organization of these folers enables clear navigation and demonstration of my data science skills. 
+The organization of these folders enables clear navigation and demonstration of my data science skills. 
