@@ -20,4 +20,4 @@ st.dataframe(filtered_df)
 
 st.write("Now our dataset is more manageable to look at!")
 
-st.subheader("Enjoy!")
+st.subheader("Look at a few different species to get a feel for the data. Enjoy!")
