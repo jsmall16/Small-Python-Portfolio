@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository showcases programming skills I developed as a student at the University of Notre Dame.
+This repository showcases programming skills I developed as a student at the University of Notre Dame in my Elements of Computing II course.
 
 
 The purpose of this repository is to highlight my ability to:
@@ -17,15 +17,10 @@ The purpose of this repository is to highlight my ability to:
 
 ## Structure
 
-This repository is organized into the following folders: 
+This repository contains the following subfolder:
 
-   - Data visualizations
-   - Data Wrangling
-   - Key Data Structures
-   - Databases
-   - Databases & Data Processing
-   - Text Processing
-   - Image Processing
-   - Machine Learning
+   - basic streamlit app
 
-The organization of these folders enables clear navigation and demonstration of my data science skills. 
+This folder features projects utilizing Streamlit to create dynamic and interactive web applications for data exploration and visualization.
+
+
