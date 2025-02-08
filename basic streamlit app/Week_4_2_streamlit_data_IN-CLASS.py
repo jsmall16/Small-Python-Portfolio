@@ -5,6 +5,9 @@ import pandas as pd
 # Step 1: Displaying a Simple DataFrame in Streamlit
 # ================================
 
+# ls, cd foler name, streamlit run, file name
+
+
 st.subheader("Now, let's look at some data!")
 
 # Creating a simple DataFrame manually
@@ -25,11 +28,19 @@ st.dataframe(df)
 # ================================
 
 # Using a selectbox to allow users to filter data by city
+
+city = st.selectbox('Select a city', df["City"].unique())
+
 # Students learn how to use widgets in Streamlit for interactivity
 
+st.write(f"People in {city}")
+
 # Filtering the DataFrame based on user selection
+filtered_df = df[df['City'] == city]
+
  
 # Display the filtered results
+st.dataframe(filtered_df)
 
 
 # ================================
@@ -41,14 +52,22 @@ st.dataframe(df)
 # # Ensure the "data" folder exists with the CSV file
 # Display the imported dataset
 
+# not idea for Github -- computer's file path; need RELATIVE path
+df2 = pd.read_csv("data/sample_data.csv")
+st.dataframe(df2)
+# "Copy Relative path" is everything in the scope of the explorer; more difficult
+# Just think about where the data is 
 
 # Using a selectbox to allow users to filter data by city
 # Students learn how to use widgets in Streamlit for interactivity
-
+salary = st.slider("Choose a maximum salary",
+          min_value = df2["Salary"].min(),
+          max_value = df2["Salary"].max())
 
 # Filtering the DataFrame based on user selection
 
-
+st.write(f"Salaries under {salary}")
+st.dataframe(df2[df2["Salary"]<= salary])
 
 
 # Display the filtered results
