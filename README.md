@@ -29,7 +29,7 @@ The app is built using Streamlit, making it interactive and accessible without n
 
 **Skills**: This project involved building an interactive web application with Streamlit, integrating data manipulation techniques using Pandas, and ensuring a smooth user experience with dynamic filtering. The dataset visualization was implemented using Streamlit's dataframe display, allowing users to interact with and explore data efficiently. Additionally, basic Python scripting was used to structure the app's logic, enabling user-driven updates and selections.
 
-**Link to Repository** [Penguins Project](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/TidyData-Project)
+**Link to Repository** [Penguins Project](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/basic%20streamlit%20app)
 
 ---
 
