@@ -27,7 +27,7 @@ This folder features projects utilizing Streamlit to create dynamic and interact
 
 ## 🏅 2008 Olympic Medalists: Data Analysis 🏅
 
-![Graph](TidyData-Project/Sport Medal Count.png)
+![Olympics Graph](TidyData-Project/Sport%20Medal%20Count.png)
 
 **TLDR**: An in-depth analysis of the 2008 Olympic medalists, focusing on data cleaning, organization, aggregation, and visualization to uncover key insights about medal distribution across sports and genders.
 
@@ -37,5 +37,5 @@ This folder features projects utilizing Streamlit to create dynamic and interact
 
 This project demonstrates the power of data analysis in uncovering meaningful patterns in sports performance, contributing to a deeper understanding of Olympic history.
 
-**Link to Repository **[GitHub Repository](#) *(Replace with actual link)*
+**Link to Repository** [Tidy Data Project](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/TidyData-Project) 
 
