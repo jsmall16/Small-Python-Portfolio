@@ -5,7 +5,7 @@ This **Penguins App** allows users to explore and filter through a dataset of pe
 ## **How to Use the Penguins App**   
 - The app first displays the entire dataset of penguins, giving you an overview of all available data.
 - Use the dropdown menu to select a specific species of penguin, and the app will display only the rows related to your selection.
-- Once you select a species, the dataset updates to show only the relevant penguins, making it easier to analyze and compare their characteristics.  
+- Once you select a species, the dataset updates to show only the relevant penguins, making it enasier to analyze and compare their characteristics.  
 
 ## **How to Run the App**  
 
