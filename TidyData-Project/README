@@ -12,3 +12,9 @@ This project **cleans, organizes, and analyzes** Olympic medalist data to uncove
 This analysis follows the **Tidy Data Principles** by restructuring the dataset into a more usable format, making it easier for aggregation, visualization, and further analysis.  
 
 ---
+
+
+### **1️⃣ Install Dependencies**  
+Ensure you have Python installed, then install the required libraries using:  
+```bash
+pip install pandas matplotlib seaborn
