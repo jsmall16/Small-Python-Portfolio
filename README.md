@@ -17,15 +17,23 @@ The purpose of this repository is to highlight my ability to:
 
 ## Structure
 
-This repository contains the following projects:
+### 🐧 Penguins App: Interactive Data Exploration 🐧
 
-   - basic streamlit app
+![Penguins](basic%20streamlit%20app/Penguins1.png)
 
-This folder features projects utilizing Streamlit to create dynamic and interactive web applications for data exploration and visualization.
+**TLDR**: An interactive Streamlit web app that allows users to explore and filter a dataset of penguins, providing an intuitive way to analyze different species and their characteristics.
+
+**Description**: The Penguins App is a user-friendly tool that displays a dataset of penguins and allows users to filter by species for a more focused analysis. Upon launching, the app initially presents the entire dataset, giving users a broad overview. With a simple dropdown menu, users can select a species, and the dataset dynamically updates to display only the relevant rows. This makes it easy to explore, compare, and analyze the different penguin species efficiently.
+
+The app is built using Streamlit, making it interactive and accessible without needing extensive programming knowledge. Whether used for educational purposes or data exploration, the Penguins App simplifies working with biological datasets.
+
+**Skills**: This project involved building an interactive web application with Streamlit, integrating data manipulation techniques using Pandas, and ensuring a smooth user experience with dynamic filtering. The dataset visualization was implemented using Streamlit's dataframe display, allowing users to interact with and explore data efficiently. Additionally, basic Python scripting was used to structure the app's logic, enabling user-driven updates and selections.
+
+**Link to Repository** [Penguins Project](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/TidyData-Project)
 
 ---
 
-## 🏅 2008 Olympic Medalists: Data Analysis 🏅
+### 🏅 2008 Olympic Medalists: Data Analysis 🏅
 
 ![Olympics Graph](TidyData-Project/Sport%20Medal%20Count.png)
 
