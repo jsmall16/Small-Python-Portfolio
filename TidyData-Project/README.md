@@ -13,12 +13,11 @@ This analysis follows the Tidy Data Principles by restructuring the dataset into
 
 
 ## Dataset Description
-The dataset contains 1,875 Olympic medalists across 70 different sports in the 2008 Olympics.
 
 📌 Source: OlympicsGoNUTS 2008 Dataset
-
-
+The dataset contains 1,875 Olympic medalists across 70 different sports in the 2008 Olympics.
 ******Insert description about where the data comes from ******
+
 --- 
 
 ## Pre-Processing Steps:
@@ -39,8 +38,12 @@ After cleansing, here are the column names in the dataset:
 - Focused on Athletics as the highest-medal sport
 ---
 ## Data Visualization 
-** Inlcude each visualization with a one sentence description of each **
+
+![1stvis](Overall%20Medal%20Distribution.png)
+
+![2ndvis](Sport%20Medal%20Count.png)
+
+![3rdvis](Athletics%20Medal%20Count%20by%20Gender.png))
+
 ---
-Data Source: OlympicsGoNUTS 2008 Dataset
-Libraries Used: pandas, matplotlib, seaborn
-Author: Your Name
+
