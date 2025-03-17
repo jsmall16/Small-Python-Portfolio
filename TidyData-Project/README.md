@@ -62,32 +62,28 @@ This analysis provides a clear overview of how medals were distributed across sp
 
 ##  How to Run This Project  
 
-### 1️⃣ Download the Jupyter Notebook  
+### Download the Jupyter Notebook  
 - Go to the **GitHub repository**.  
 - Click on the **Jupyter Notebook file (`.ipynb`)**.  
 - Click **"Download raw"** or **"Download"** and save it to a folder on your computer.  
 
-### 2️⃣ **Ensure Python or Anaconda are installed**
+### **Ensure Python or Anaconda are installed**
 
-### 3️⃣**Download Required Dependencies**
+### **Download Required Dependencies**
 - This installs pandas, matplotlib, and seaborn, which are required for data analysis and visualization.
   
 **For Python users**
-```bash
-pip install pandas matplotlib seaborn
-```
-**For Anaconda users**
-```bash
-conda install pandas matplotlib seaborn
-```
+- pip install pandas matplotlib seaborn
 
-### 4️⃣ **Open Jupyter Notebook**
+**For Anaconda users**
+- conda install pandas matplotlib seaborn
+
+### **Open Jupyter Notebook**
 Navigate to the folder where you saved the .ipynb file:
 Launch Jupyter Notebook and open the Olympic_Medal_Analysis.ipynb file:
-```
-cd path/to/folder
-jupyter notebook
-```
+- cd path/to/folder
+  jupyter notebook
+
 
 ---
 
