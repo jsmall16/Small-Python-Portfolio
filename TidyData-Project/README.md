@@ -32,18 +32,63 @@ After cleansing, here are the column names in the dataset:
 - **medal**: Type of medal (Gold, Silver, Bronze)
 ---
 
-## Data Aggregation (Summarizing Trends)
+## Data Aggregation 
 - Counted total medals per sport
 - Analyzed medal distribution by gender
 - Focused on Athletics as the highest-medal sport
 ---
 ## Data Visualization 
+During my analysis, I discovered several compelling insights that reveal interesting trends and patterns:
 
+### Overall Medal Distribution
 ![1stvis](Overall%20Medal%20Distribution.png)
 
+This pie chart illustrates the overall medal distribution, with gold medals accounting for 35.6%, silver medals at 33.1%, and bronze medals at 31.3%. The data suggests a relatively balanced distribution among the three medal types, with gold being the most awarded.
+
+### Medal County by Sport
 ![2ndvis](Sport%20Medal%20Count.png)
 
-![3rdvis](Athletics%20Medal%20Count%20by%20Gender.png))
+This bar chart showcases the top 10 sports by total medal count in the 2008 Olympics, with athletics, rowing, and swimming leading the rankings. The distribution of gold, silver, and bronze medals varies across sports, with athletics and rowing securing the most medals overall.
+
+### Athletics Medal Count by Gender
+![3rdvis](Athletics%20Medal%20Count%20by%20Gender.png)
+
+This bar chart illustrates the 2008 Olympics athletics medal count by gender, showing a fairly balanced distribution between male and female athletes. While silver medals were the most awarded for both genders, males received slightly more bronze medals and females received slightly more gold medals. 
+
+### Concluding Thoughts
+This analysis provides a clear overview of how medals were distributed across sports and genders in the 2008 Olympics, highlighting key trends in athletic performance. The findings emphasize the competitive balance across events while showcasing slight differences in medal distribution between male and female athletes.
 
 ---
 
+##  How to Run This Project  
+
+### 1️⃣ Download the Jupyter Notebook  
+- Go to the **GitHub repository**.  
+- Click on the **Jupyter Notebook file (`.ipynb`)**.  
+- Click **"Download raw"** or **"Download"** and save it to a folder on your computer.  
+
+### 2️⃣ **Ensure Python or Anaconda are installed**
+
+### 3️⃣**Download Required Dependencies**
+- This installs pandas, matplotlib, and seaborn, which are required for data analysis and visualization.
+  
+**For Python users**
+```bash
+pip install pandas matplotlib seaborn
+```
+**For Anaconda users**
+```bash
+conda install pandas matplotlib seaborn
+```
+
+### 4️⃣ **Open Jupyter Notebook**
+Navigate to the folder where you saved the .ipynb file:
+Launch Jupyter Notebook and open the Olympic_Medal_Analysis.ipynb file:
+```
+cd path/to/folder
+jupyter notebook
+```
+
+---
+
+## Acknowledgments & References  
