@@ -9,18 +9,23 @@ This project cleans, organizes, and analyzes* Olympic medalist data to uncover m
 - Which gender won the most gold medals in athletics? 
 - How does the overall medal distribution break down by type? 
 
-This analysis follows the Tidy Data Principles by restructuring the dataset into a more usable format, making it easier for aggregation, visualization, and further analysis.  
-
-
-## Dataset Description
-
-📌 Source: OlympicsGoNUTS 2008 Dataset
-The dataset contains 1,875 Olympic medalists across 70 different sports in the 2008 Olympics.
-******Insert description about where the data comes from ******
-
 --- 
 
+## Dataset Description
+Source: OlympicsGoNUTS 2008 Dataset
+- The dataset comes from Olympics Go NUTS, a project by the European Data Journalism Network (EDJNet), which maps Olympic medal counts to European regions using official Olympic data. It provides insights into how different regions performed in the 2008 Olympics, focusing on medal distribution across various sports and demographics.
+- The dataset contains 1,875 Olympic medalists across 70 different sports in the 2008 Olympics.
+
+--- 
+## Applying Tidy Data Principles  
+
+This analysis follows **Tidy Data Principles** to ensure efficient aggregation, visualization, and further analysis. According to Hadley Wickham, a dataset is tidy when:  
+1. Each variable has its own column
+2. Each observation is a separate row 
+3. Each cell contains a single value
+   
 ## Pre-Processing Steps:
+To remain in accordance with tidy data principles, I: 
 - Converted wide format data (sports as columns) to tidy long format
 - Extracted gender and sport into separate columns
 - Removed NaN values and checked for duplicates
@@ -73,21 +78,25 @@ This analysis provides a clear overview of how medals were distributed across sp
 - This installs pandas, matplotlib, and seaborn, which are required for data analysis and visualization.
   
 **For Python users**
-- pip install pandas matplotlib seaborn
-
+```bash
+pip install pandas matplotlib seaborn
+```
 **For Anaconda users**
-- conda install pandas matplotlib seaborn
+```bash
+ conda install pandas matplotlib seaborn
+```
 
 ### **Open Jupyter Notebook**
 Navigate to the folder where you saved the .ipynb file:
-Launch Jupyter Notebook and open the Olympic_Medal_Analysis.ipynb file:
-- cd path/to/folder
-  jupyter notebook
-
-
+- Launch Jupyter Notebook and open the Olympic_Medal_Analysis.ipynb file:
+```bash
+cd path/to/folder
+jupyter notebook
+```
 ---
 
 ## Acknowledgments & References  
+For further reading: 
 - Pandas Cheat Sheet: [Link](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 - Tidy Data Principles: [Link](https://vita.had.co.nz/papers/tidy-data.pdf)
 
