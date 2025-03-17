@@ -88,3 +88,6 @@ Launch Jupyter Notebook and open the Olympic_Medal_Analysis.ipynb file:
 ---
 
 ## Acknowledgments & References  
+- Pandas Cheat Sheet: [Link](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+- Tidy Data Principles: [Link](https://vita.had.co.nz/papers/tidy-data.pdf)
+
