@@ -23,7 +23,7 @@ The purpose of this repository is to highlight my ability to:
 
 ![Penguins](basic%20streamlit%20app/Penguins1.png)
 
-**TLDR**: An interactive Streamlit web app that allows users to explore and filter a dataset of penguins, providing an intuitive way to analyze different species and their characteristics.
+**TLDR**: An interactive, Streamlit web app that allows users to explore and filter a dataset of penguins, providing an intuitive way to analyze different species and their characteristics.
 
 **Description**: The Penguins App is a user-friendly tool that displays a dataset of penguins and allows users to filter by species for a more focused analysis. Upon launching, the app initially presents the entire dataset, giving users a broad overview. With a simple dropdown menu, users can select a species, and the dataset dynamically updates to display only the relevant rows. This makes it easy to explore, compare, and analyze the different penguin species efficiently. 
 
