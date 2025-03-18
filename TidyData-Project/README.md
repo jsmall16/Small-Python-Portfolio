@@ -66,34 +66,34 @@ This analysis provides a clear overview of how medals were distributed across sp
 
 ---
 
-##  How to Run This Project  
+##  How to Download, Open, and Run This Jupyter Notebook in VS Code 
 
-### Download the Jupyter Notebook  
-- Go to the **GitHub repository**.  
-- Click on the **Jupyter Notebook file (`.ipynb`)**.  
-- Click **"Download raw"** or **"Download"** and save it to a folder on your computer.  
+### **Step 1: Download the notebook from GitHub**
+1. Go to the repository on GitHub.
+2. Locate the 2008_olympic_medals.ipynb Jupyter notebook file.
+3. Click on the file to view it.
+4. Click "Download Raw File"
 
-### **Ensure Python or Anaconda are installed**
+### **Step 2: Set up Visual Studio Code**
+1. Open Visual Studio Code
+2. Ensure you have the Python extension installed.
+3. Go to File > Open Folder... and select the folder where you saved the notebook.
 
-### **Download Required Dependencies**
-- This installs pandas, matplotlib, and seaborn, which are required for data analysis and visualization.
-  
-**For Python users**
+### **Step 3: Open and run the notebook**
+1. Open the 2008_olympic_medals.ipynb file from the Explorer.
+4. Click the "Run All" button or run each cell individually.
+
+### Dependencies
+Before running the notebook, ensure you have the following Python packages installed. You can install them using pip:
+
 ```bash
 pip install pandas matplotlib seaborn
 ```
-**For Anaconda users**
-```bash
- conda install pandas matplotlib seaborn
-```
+Packages used in this project:
+- pandas — for data manipulation
+- matplotlib — for visualization
+- seaborn — for enhanced plotting
 
-### **Open Jupyter Notebook**
-Navigate to the folder where you saved the .ipynb file:
-- Launch Jupyter Notebook and open the Olympic_Medal_Analysis.ipynb file:
-```bash
-cd path/to/folder
-jupyter notebook
-```
 ---
 
 ## Acknowledgments & References  
