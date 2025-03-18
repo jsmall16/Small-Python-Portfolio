@@ -15,7 +15,9 @@ The purpose of this repository is to highlight my ability to:
    - Train basic machine learning models 
 
 
-## Structure
+## Contents
+   - Penguins App: Interactive Data Exploration
+   - 2008 Olympic Medalists: Data Analysis
 
 ### 🐧 Penguins App: Interactive Data Exploration 🐧
 
