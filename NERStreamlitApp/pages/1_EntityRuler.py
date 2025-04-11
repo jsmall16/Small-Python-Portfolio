@@ -1,6 +1,7 @@
 import streamlit as st
 import spacy
 from spacy.pipeline import EntityRuler
+from spacy import displacy
 
 st.set_page_config(page_title="Custom NER Builder", layout="wide")
 st.title("🧠 Custom Entity Ruler for Taylor Swift Lyrics")
