@@ -29,13 +29,14 @@ with st.form("add_patterns"): # Creates a form in streamlit
     # Creates a text input field where the user types in the label for their entity 
     label = st.text_input("Entity Label (e.g. CITY)").upper()
     # User types in the matching pattern
-    pattern_input = st.text_input("Patterns (London)")
+    pattern_input = st.text_input("Patterns (London)").upper()
     add = st.form_submit_button("Add Patterns") # form submits when users press button
 
     if add and label and pattern_input: # Makes sure user clicked button and entered a pattern/label
-        pattern = pattern_input.strip() # Removes accidental spaces where they types 
-        st.session_state.saved_patterns.append({"label": label, "pattern": pattern}) # stores the pattern and label
-        st.success(f"Added `{pattern}` to `{label}`") # confirm addition 
+        # Convert pattern string into token-based spaCy pattern (case-insensitive)
+        token_pattern = [{"LOWER": w.lower()} for w in pattern_input.strip().split()]
+        st.session_state.saved_patterns.append({"label": label, "pattern": token_pattern}) # stores the pattern and label
+        st.success(f"Added `{pattern_input}` to `{label}`") # confirm addition 
 
 
 if st.session_state.saved_patterns: # checks if the user has saved patterns
