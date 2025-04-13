@@ -36,24 +36,22 @@ This bar chart shows the total word count for each of Taylor Swift’s main stud
 An NER (Named Entity Recognition) ruler is especially useful for Swifties because it lets fans tag and track recurring names, places, and motifs across Taylor’s lyrics. By creating custom labels like LOVE_INTEREST, CITY, or SYMBOL, fans can uncover deeper patterns in her storytelling—whether it’s identifying how often she references New York or spotting easter eggs tied to specific eras.
 
 ### Example Usage
-1. Define a pattern:
+**1. Define a pattern:**
   - Label: CITY
   - Pattern: LONDON
 
 ![APPUI](APP_UI.png)
 
-2. Paste, upload, or use sample lyrics:
+**2. Paste, upload, or use sample lyrics:**
 
 
-  **"You know I love a London boy. I enjoy walking Camden Market in the afternoon..."**
+![text](Text_type.png)
 
 
-3. View results:
+**3. View results:**
 
 
 ![DISPLACY](SpaCy_display.png)
-
-The app will store the entity patterns you have created and 
 
 ---
 ## How to run the App
