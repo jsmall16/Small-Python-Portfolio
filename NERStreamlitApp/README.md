@@ -1,7 +1,7 @@
 # 🎤 Taylor Swift's Lyrical Legacy: Custom NER + Visual Insights 🎤
 ![TSPIANO](maxresdefault.jpg)
 
-Calling all Swifties! This interactive Streamlit combines Natural Language Processing (NLP) and data visualization to explore the storytelling evolution of one of the greatest lyricists of our time. This app uses spaCy to implement custom Named Entity Recognition (NER) on Taylor Swift’s lyrics and provides album-based analytics, such as total word counts, to examine lyrical trends.
+**Calling all Swifties!** This interactive Streamlit combines Natural Language Processing (NLP) and data visualization to explore the storytelling evolution of one of the greatest lyricists of our time. This app uses spaCy to implement custom Named Entity Recognition (NER) on Taylor Swift’s lyrics and provides album-based analytics, such as total word counts, to examine lyrical trends.
 
 ---
 
@@ -40,6 +40,8 @@ An NER (Named Entity Recognition) ruler is especially useful for Swifties becaus
   - Label: CITY
   - Pattern: LONDON
 
+![APPUI](APP_UI.png)
+
 2. Paste, upload, or use sample lyrics:
 
 
@@ -49,7 +51,7 @@ An NER (Named Entity Recognition) ruler is especially useful for Swifties becaus
 3. View results:
 
 
-![TSPIANO](SpaCy_display.png)
+![DISPLACY](SpaCy_display.png)
 
 The app will store the entity patterns you have created and 
 
