@@ -3,7 +3,7 @@
 Calling all Swifties! This interactive Streamlit combines Natural Language Processing (NLP) and data visualization to explore the storytelling evolution of one of the greatest lyricists of our time. This app uses spaCy to implement custom Named Entity Recognition (NER) on Taylor Swift’s lyrics and provides album-based analytics, such as total word counts, to examine lyrical trends.
 
 ## insert image
-![TSPIANO]()
+![TSPIANO](maxresdefault.jpg)
 
 ---
 
