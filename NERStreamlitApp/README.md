@@ -105,7 +105,7 @@ From the storytelling of Speak Now to the poetry of Folklore and The Tortured Po
 
 ### Data
 
-- ShaynaK (GitHub). [Taylor Swift Lyrics Dataset](https://github.com/shaynak/taylor-swift-lyrics).
+- [Taylor Swift Lyrics Dataset - ShaynaK (GitHub)](https://github.com/shaynak/taylor-swift-lyrics/blob/main/songs.csv)
 
 ### Documentation 
 
