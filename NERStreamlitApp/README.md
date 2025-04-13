@@ -5,7 +5,7 @@
 
 ---
 
-## Project Overview
+## 📁 Project Overview
 
 ### Purpose
 This app allows fans and analysts alike to:
@@ -19,7 +19,7 @@ spaCy is a powerful NLP library that supports customizable NER pipelines.
 - The EntityRuler allowers users to build their own recognition rules and make the analysis more fan-personalized
 ---
 
-## App Features 
+## 🔧 App Features 
 
 ## Visualize total word count per album
 
@@ -35,7 +35,7 @@ This bar chart shows the total word count for each of Taylor Swift’s main stud
 
 An NER (Named Entity Recognition) ruler is especially useful for Swifties because it lets fans tag and track recurring names, places, and motifs across Taylor’s lyrics. By creating custom labels like LOVE_INTEREST, CITY, or SYMBOL, fans can uncover deeper patterns in her storytelling—whether it’s identifying how often she references New York or spotting easter eggs tied to specific eras.
 
-### Example Usage
+## Example Usage
 **1. Define a pattern:**
   - Label: CITY
   - Pattern: LONDON
@@ -50,11 +50,12 @@ An NER (Named Entity Recognition) ruler is especially useful for Swifties becaus
 
 **3. View results:**
 
+Using the sample lyrics, this is what the output may look like, depending on the types of entities and patterns you define. 
 
 ![DISPLACY](SpaCy_display.png)
 
 ---
-## How to run the App
+## 💻 How to run the App
 
 You can try the app live here: [**Streamlit App Link**](https://your-app-url.streamlit.app)  
 *(Replace with your deployed URL)*
@@ -100,7 +101,14 @@ From the storytelling of Speak Now to the poetry of Folklore and The Tortured Po
 
 ---
 
-## Sources & Acknowledgements
+## 💡 Sources & Acknowledgements
 
-1. Data
-2. spaCy sources
+### Data
+
+- ShaynaK (GitHub). [Taylor Swift Lyrics Dataset](https://github.com/shaynak/taylor-swift-lyrics).
+
+### Documentation 
+
+- [The Basics of SpaCy](https://spacy.pythonhumanities.com/01_01_install_and_containers.html)
+- [Entity Ruler](https://spacy.io/api/entityruler)
+- [Streamlit Cheat sheet](https://cheat-sheet.streamlit.app/) 
