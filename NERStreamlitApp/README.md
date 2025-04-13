@@ -21,39 +21,31 @@ spaCy is a powerful NLP library that supports customizable NER pipelines.
 
 ## App Features 
 
-## Word Count Analysis per Album 
-Visualize total word count per album
+## Visualize total word count per album
 
-Albums styled using their unique aesthetic with color-coded bars
+![TSDATA](TSDATA.png)
 
-Data based on cleaned lyric dataset from major Taylor Swift album
+This bar chart shows the total word count for each of Taylor Swift’s main studio albums, arranged in chronological order. It highlights how her lyrical volume has evolved over time, with a noticeable peak in Red (Taylor’s Version) and The Tortured Poets Department. Albums like Folklore and Taylor Swift feature more concise writing, while others like 1989 and Midnights strike a balance between depth and brevity. Each bar is color-coded to reflect the aesthetic of its corresponding era, offering both a quantitative and stylistic look at Taylor’s discography.
 
 
-## Customer NER
-Named Entity Recognition
-Add your own entity labels and keyword patterns (e.g., "James" under "LOVE_INTEREST")
+## Custom Named Entity Recognition 
+- Add your own entity labels and keyword patterns (e.g., "James" under "LOVE_INTEREST")
+- Upload .txt files or paste in your own lyrics
+- Visual output with entities highlighted using spaCy’s displacy.render
 
-Upload .txt files or paste in your own lyrics
+An NER (Named Entity Recognition) ruler is especially useful for Swifties because it lets fans tag and track recurring names, places, and motifs across Taylor’s lyrics. By creating custom labels like LOVE_INTEREST, CITY, or SYMBOL, fans can uncover deeper patterns in her storytelling—whether it’s identifying how often she references New York or spotting easter eggs tied to specific eras.
 
-Visual output with entities highlighted using spaCy’s displacy.render
+### Example Usage
+1. Define a pattern:
+- Label: CITY
+- Pattern: LONDON
 
-📁 Example Usage
-Define a pattern:
-
-Label: LOVE_INTEREST
-
-Pattern: James
-
-Paste this lyric:
+2. Paste, upload, or use sample lyrics:
 
 "You know I love a London boy. I enjoy walking Camden Market in the afternoon..."
 
-View results:
-
-James: LOVE_INTEREST
-
-London: CITY
-
+3. View results:
+![TSDATA](TSDATA.png)
 
 ---
 ## How to run the App
