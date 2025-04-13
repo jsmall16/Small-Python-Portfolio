@@ -19,12 +19,40 @@ spaCy is a powerful NLP library that supports customizable NER pipelines.
 - The EntityRuler allowers users to build their own recognition rules and make the analysis more fan-personalized
 ---
 
-## Data Insights
+## App Features 
 
---
+## Word Count Analysis per Album 
+Visualize total word count per album
+
+Albums styled using their unique aesthetic with color-coded bars
+
+Data based on cleaned lyric dataset from major Taylor Swift album
+
 
 ## Customer NER
+Named Entity Recognition
+Add your own entity labels and keyword patterns (e.g., "James" under "LOVE_INTEREST")
 
+Upload .txt files or paste in your own lyrics
+
+Visual output with entities highlighted using spaCy’s displacy.render
+
+📁 Example Usage
+Define a pattern:
+
+Label: LOVE_INTEREST
+
+Pattern: James
+
+Paste this lyric:
+
+"You know I love a London boy. I enjoy walking Camden Market in the afternoon..."
+
+View results:
+
+James: LOVE_INTEREST
+
+London: CITY
 
 
 ---
@@ -34,6 +62,19 @@ You can try the app live here: [**Streamlit App Link**](https://your-app-url.str
 *(Replace with your deployed URL)*
 
 Or, you can download the app locally. Follow these instructions to learn how to do so!
+
+### Make sure you have the required libraries installed
+  - streamlit
+  - spacy
+  - pandas
+  - matplotlib
+  - seaborn
+
+To install them manually:
+```bash
+pip install streamlit spacy pandas matplotlib seaborn
+python -m spacy download en_core_web_sm
+```
 
 1. Clone the repository:
 ```bash
@@ -54,6 +95,10 @@ cd NERStreamlitApp
 streamlit run Home.py
 ```
 5. Open the App in Your Browser Once the app starts, your terminal will display a local URL (e.g., http://localhost:8501). Click this link or copy and paste it into your web browser to start exploring the app.
+
+---
+
+From the storytelling of Speak Now to the poetry of Folklore and The Tortured Poets Department, this app offers both fans and data enthusiasts a lyrical deep dive into Taylor Swift's evolving artistry.
 
 ---
 
