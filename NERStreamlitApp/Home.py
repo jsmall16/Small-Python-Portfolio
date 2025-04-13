@@ -9,17 +9,19 @@ st.title("Taylor Swift's Lyrical Legacy")
 st.image('TSNERIMAGE.jpeg')
 
 # Intro Section 
-st.subheader("✏️ The Power of Her Pen")
+st.subheader("The Power of Her Pen")
 st.write("""
-    Taylor Swift has redefined modern pop and country music with her deeply personal, poetic, and narrative-driven lyrics.
-    From heartbreak anthems to indie introspection, her words resonate with fans across generations.
+    Taylor Swift stands as one of the most influential artists of our generation. 
+    Beginning her career in country music, she has effortlessly explored and mastered 
+    multiple genres, redefining the boundaries of pop along the way. Her lyrics resonate 
+    across generations, offering a song for every emotion and moment.
     """)
 
-st.subheader("🔍 What You'll Find Here")
+st.subheader("What You'll Find Here")
 st.write("""
-This app explores Taylor’s discography using data and natural language analysis. 
+This app explores Taylor’s discography using data and natural language processing. 
 You’ll uncover trends in:
-- **Lyrical word counts**
+- **Total Words used across her albums**
 - **Custom Named Entity Recognition (NER)** for identifying places, names, and symbols in her lyrics
 
 Together, these tools offer a fresh lens into her storytelling evolution
@@ -28,8 +30,9 @@ Together, these tools offer a fresh lens into her storytelling evolution
 # Album overview section 
 st.markdown("### 💿 Taylor Swift Albums at a Glance")
 st.markdown("""
-                Below is a quick tour through Taylor's main albums — each representing a distinct era in her lyrical evolution. 
-                From country storytelling to indie introspection, explore how her words have grown alongside her sound:
+                Below is a quick tour through Taylor's main albums (excluding holiday albums and songs used in films).
+                Taylor is known for reinventing herself with her music, and each album represents a distinct era in her lyrical evolution. 
+                From country storytelling to poetry, explore how her words have grown alongside her sound:
                 """)
 st.markdown("""
         - **🤠 Taylor Swift** 
@@ -126,9 +129,7 @@ st.pyplot(fig)
 
 # Closing Section
 st.markdown("""
-From the youthful honesty of *Taylor Swift* to the poetic complexity of *The Tortured Poets Department*,  
-Taylor’s songwriting reflects a continuous evolution in style, substance, and self-awareness.
+From her debut album to her latest album, Taylor’s songwriting 
+reflects a continuous evolution in both style and substance.
 
-And this is just the beginning.  
-
-Navigate through this app to explore deeper insights into her storytelling — one lyric at a time.""")
+Navigate through this app to explore deeper insights into her storytelling!""")

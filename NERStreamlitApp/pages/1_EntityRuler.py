@@ -1,4 +1,5 @@
 # Import necessary Libraries 
+import pandas as pd
 import streamlit as st
 import spacy
 from spacy.pipeline import EntityRuler
@@ -10,8 +11,8 @@ st.image("pages/TS_Words.jpeg")
 
 # Intro Text
 st.write("""
-Welcome to your own Named Entity Recognition builder — a place to turn Taylor Swift lyrics 
-into custom-tagged insights. Add your own rules, define who or what matters, and watch your entities appear like magic.
+Welcome to the Swiftie Named Entity Recognition builder, a place to turn Taylor Swift lyrics 
+into custom insights. Add your own rules, define who or what matters, and watch your entities appear like magic!
 """)
 
 # Saves entity patterns across interactions
@@ -27,9 +28,9 @@ For example, label "LOVE_INTEREST" and match patterns like "James" or "Tom".
 
 with st.form("add_patterns"): # Creates a form in streamlit
     # Creates a text input field where the user types in the label for their entity 
-    label = st.text_input("Entity Label (e.g. CITY)").upper()
+    label = st.text_input("Entity Label (e.g. CITY)")
     # User types in the matching pattern
-    pattern_input = st.text_input("Patterns (London)").upper()
+    pattern_input = st.text_input("Patterns (London)")
     add = st.form_submit_button("Add Patterns") # form submits when users press button
 
     if add and label and pattern_input: # Makes sure user clicked button and entered a pattern/label
@@ -38,12 +39,14 @@ with st.form("add_patterns"): # Creates a form in streamlit
         st.session_state.saved_patterns.append({"label": label, "pattern": token_pattern}) # stores the pattern and label
         st.success(f"Added `{pattern_input}` to `{label}`") # confirm addition 
 
-
-if st.session_state.saved_patterns: # checks if the user has saved patterns
+# Show saved patterns
+if st.session_state.saved_patterns:
     st.markdown("### Saved Entity Patterns") 
     st.write("Here are the rules you've added so far:")
-    for p in st.session_state.saved_patterns: # Loops though saved patterns and prints it out 
-        st.write(f"- `{p['pattern']}` → `{p['label']}`")
+    df = pd.DataFrame([
+    {"label": p["label"], "pattern": str(p["pattern"])}
+    for p in st.session_state.saved_patterns
+    ])
 
 # Text Input Section 
 
@@ -60,7 +63,7 @@ text_method = st.radio("Choose input method:", ["Sample Lyrics", "Paste Text", "
 # Initialize an empty string for the text
 text = ""
 
-# Option 1: Use sample Lyric's from Taylor Swift's Song London Boy
+# Option 1: Use sample Lyrics from Taylor Swift's Song London Boy
 if text_method == "Sample Lyrics":
     text = "You know I love a London boy. I enjoy walking Camden Market in the afternoon. He likes my American smile. Like a child when our eyes meet, darling, I fancy you."
 
@@ -79,10 +82,7 @@ elif text_method == "Upload .txt File":
 
 # Check if there's any text to process
 if text:
-    st.subheader(" Analyzing Your Text")
-    st.write("Using your custom rules, here's what we've found:")
-
-    # Create blank spaCy englihs pipeline
+    # Create blank spaCy english pipeline
     nlp = spacy.blank("en")
     # add the entity ruler to the pipeline
     ruler = nlp.add_pipe("entity_ruler")
@@ -98,7 +98,7 @@ if text:
     st.write(text)
 
     # Visualize entities with displacy 
-    st.subheader("✅ Highlighted Entities")
+    st.subheader("Highlighted Entities")
     # Make the text white 
     st.markdown("""
         <style>
@@ -114,12 +114,16 @@ if text:
     st.components.v1.html(wrapped_html, height=300, scrolling=True)
 
     # List of Detected Entities
-    st.subheader("🔎 Entity List")
+    st.subheader("✅ Entity List")
     st.write("Here’s a breakdown of the entities we found and how they were labeled:")
     
-    # If any entitites were found, display them 
+    # If any entities were found, display them 
     if doc.ents:
         for ent in doc.ents:
-            st.write(f"• **{ent.text}** → `{ent.label_}`")
+            st.markdown(f"""
+                **Text:** `{ent.text}`  
+                **Label:** `{ent.label_}` 
+                **Start Pos:** {ent.start_char} | **End Pos:** {ent.end_char}
+                        """)
     else:
         st.info("No entities found with the current patterns.")
