@@ -45,7 +45,7 @@ An NER (Named Entity Recognition) ruler is especially useful for Swifties becaus
 "You know I love a London boy. I enjoy walking Camden Market in the afternoon..."
 
 3. View results:
-![TSDATA](TSDATA.png)
+![Displacy](T
 
 ---
 ## How to run the App
