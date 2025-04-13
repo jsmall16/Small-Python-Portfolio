@@ -22,16 +22,29 @@ spaCy is a powerful NLP library that supports customizable NER pipelines.
 
 
 ---
+## How to run the App
 
-## 🛠️ Setup & Installation
-
-### 🔗 Deployed App
 You can try the app live here: [**Streamlit App Link**](https://your-app-url.streamlit.app)  
 *(Replace with your deployed URL)*
 
-### 💻 Local Installation
+Or, you can download the app locally. Follow these instructions to learn how to do so!
 
-1. Clone the repo:
+1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/TaylorSwiftNERApp.git
 cd TaylorSwiftNERApp
+```
+
+2. Run this command to view the files in the project folder:
+```bash
+ls
+```
+3. Move into the directory containing your Streamlit app
+```bash
+cd path/to/your/project
+```
+4. Launch the Streamlit app by running
+```bash
+streamlit run Home.py
+```
+5. Open the App in Your Browser Once the app starts, your terminal will display a local URL (e.g., http://localhost:8501). Click this link or copy and paste it into your web browser to start exploring the app.
