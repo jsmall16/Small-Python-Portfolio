@@ -16,7 +16,7 @@ This app allows fans and analysts alike to:
 
 ### Why spaCy?
 spaCy is a powerful NLP library that supports customizable NER pipelines. 
-- The EntityRuler allowers users to build their own recognition rules and make the analysis more fan-personalized
+- The EntityRuler allows users to build their own recognition rules and make the analysis more fan-personalized
 ---
 
 ## 🔧 App Features 
