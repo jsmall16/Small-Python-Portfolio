@@ -37,17 +37,21 @@ An NER (Named Entity Recognition) ruler is especially useful for Swifties becaus
 
 ### Example Usage
 1. Define a pattern:
-- Label: CITY
-- Pattern: LONDON
+  - Label: CITY
+  - Pattern: LONDON
 
 2. Paste, upload, or use sample lyrics:
 
-"You know I love a London boy. I enjoy walking Camden Market in the afternoon..."
+
+  **"You know I love a London boy. I enjoy walking Camden Market in the afternoon..."**
+
 
 3. View results:
 
 
-![TSPIANO](maxresdefault.jpg)
+![TSPIANO](SpaCy_display.png)
+
+The app will store the entity patterns you have created and 
 
 ---
 ## How to run the App
