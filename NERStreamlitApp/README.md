@@ -19,6 +19,14 @@ This app allows fans and analysts alike to:
 ### Why spaCy?
 spaCy is a powerful NLP library that supports customizable NER pipelines. 
 - The EntityRuler allowers users to build their own recognition rules and make the analysis more fan-personalized
+---
+
+## Data Insights
+
+--
+
+## Customer NER
+
 
 
 ---
@@ -32,7 +40,7 @@ Or, you can download the app locally. Follow these instructions to learn how to 
 1. Clone the repository:
 ```bash
 git clone https://github.com/jsmall16/Small-Python-Portfolio/tree/main/NERStreamlitApp
-cd NERStreamlitApp
+cd Small-Python-Portfolio/NERStreamlitApp
 ```
 
 2. Run this command to view the files in the project folder:
@@ -41,10 +49,17 @@ ls
 ```
 3. Move into the directory containing your Streamlit app
 ```bash
-cd path/to/your/project
+cd NERStreamlitApp
 ```
 4. Launch the Streamlit app by running
 ```bash
 streamlit run Home.py
 ```
 5. Open the App in Your Browser Once the app starts, your terminal will display a local URL (e.g., http://localhost:8501). Click this link or copy and paste it into your web browser to start exploring the app.
+
+---
+
+## Sources & Acknowledgements
+
+1. Data
+2. spaCy sources
