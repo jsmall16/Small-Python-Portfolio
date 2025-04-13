@@ -31,8 +31,8 @@ Or, you can download the app locally. Follow these instructions to learn how to 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/TaylorSwiftNERApp.git
-cd TaylorSwiftNERApp
+git clone https://github.com/jsmall16/Small-Python-Portfolio/tree/main/NERStreamlitApp
+cd NERStreamlitApp
 ```
 
 2. Run this command to view the files in the project folder:
