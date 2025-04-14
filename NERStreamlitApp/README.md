@@ -1,7 +1,7 @@
 # 🎤 Taylor Swift's Lyrical Legacy: Custom NER + Visual Insights 🎤
 ![TSPIANO](maxresdefault.jpg)
 
-**Calling all Swifties!** This interactive Streamlit app combines Natural Language Processing (NLP) and data visualization to explore the storytelling evolution of one of the greatest lyricists of our time. This app uses spaCy to implement custom Named Entity Recognition (NER) on Taylor Swift’s lyrics and provides album-based analytics, such as total word counts, to examine lyrical trends.
+**Calling all Swifties!** This interactive Streamlit app combines Natural Language Processing (NLP) and data visualization to explore the storytelling evolution of one of the greatest lyricists of our time. This app uses spaCy to implement custom Named Entity Recognition (NER) on Taylor Swift’s lyrics, and also provides album-based analytics to examine lyrical trends.
 
 ---
 
@@ -17,8 +17,8 @@ This app allows fans and analysts to:
 ### Why spaCy?
 spaCy is a library in Python that is used to conduct Natural Language Processing.
 
-- One component of spaCy, Named Entity Recognition, allows users to extract text pertaining to pre-defined categoires
-- The EntityRuler allows users to build their own recognition rules and make the analysis personalized
+- One component of spaCy, Named Entity Recognition, allows users to extract text pertaining to pre-defined categories
+- The EntityRuler allows users to build their own recognition rules and make the analysis more personalized
 
 ---
 
@@ -28,13 +28,13 @@ spaCy is a library in Python that is used to conduct Natural Language Processing
 
 ![TSDATA](TSDATA.png)
 
-This bar chart shows the total word count for each of Taylor Swift’s main studio albums, arranged in chronological order. It highlights how her lyrical volume has evolved over time, with a noticeable peak in Red (Taylor’s Version) and The Tortured Poets Department. Albums like Folklore and Taylor Swift feature more concise writing, while others like 1989 and Midnights strike a balance a nice balance in songwriting length. Each bar is color-coded to reflect the aesthetic of its corresponding era, offering a data-driven, stylistic look at Taylor’s discography.
+This bar chart shows the total word count for each of Taylor Swift’s main studio albums, arranged in chronological order. It highlights how her lyrical volume has evolved over time, with a noticeable peak in Red (Taylor’s Version) and The Tortured Poets Department. Albums like Folklore and Taylor Swift feature more concise writing, while 1989 and Midnights strike a nice balance in songwriting length. Each bar is color-coded to reflect the aesthetic of its corresponding era, offering a data-driven, stylistic look at Taylor’s discography.
 
 
 ## Custom Named Entity Recognition 
 - Add your own entity labels and keyword patterns (ex-, "James" under "LOVE_INTEREST")
-- Upload .txt files,paste in your own lyrics, or use the sample lyrics provided
-- Visual output with entities highlighted using spaCy’s displacy
+- Upload .txt files, paste in your own lyrics, or use the sample lyrics provided
+- Visualize output with entities highlighted using spaCy’s displacy
 
 A custom Entity ruler is especially useful for Swifties because it lets fans tag and track recurring names, places, and motifs across Taylor’s lyrics. By creating custom labels like LOVE_INTEREST, CITY, or SYMBOL, fans can uncover deeper patterns in her storytelling, whether it’s identifying how often she references New York or spotting easter eggs tied to specific eras.
 
@@ -80,7 +80,7 @@ To get started installing the app:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/jsmall16/Small-Python-Portfolio/tree/main/NERStreamlitApp
+git clone https://github.com/jsmall16/Small-Python-Portfolio.git
 cd Small-Python-Portfolio/NERStreamlitApp
 ```
 
