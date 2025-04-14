@@ -35,17 +35,40 @@ st.markdown("""
                 From country storytelling to poetry, explore how her words have grown alongside her sound:
                 """)
 st.markdown("""
-        - **🤠 Taylor Swift** 
-        - **🌟 Fearless (TV)** 
-        - **💜 Speak Now (TV)** 
-        - **❤️ Red (TV)**  
-        - **💎 1989 (TV)** 
-        - **🖤 Reputation**  
-        - **💗 Lover** 
-        - **🌲 Folklore** 
-        - **🍂 Evermore** 
-        - **🌌 Midnights** 
-        - **📖 Tortured Poets Dept.** 
+🤠 Taylor Swift
+Her debut country album, full of youthful storytelling and heartfelt teen anthems.
+
+🌟 Fearless (Taylor’s Version)
+Breakout album with glittery country-pop hits about love, heartbreak, and growing up.
+
+💜 Speak Now (Taylor’s Version)
+Entirely self-written; blends fairytale themes with raw confessions and emotional ballads.
+
+❤️ Red (Taylor’s Version)
+A genre-blending, emotionally intense album exploring love, loss, and longing.
+
+💎 1989 (Taylor’s Version)
+Polished synth-pop transformation with catchy hooks and big city energy.
+
+🖤 Reputation
+A bold, edgy reinvention tackling fame, revenge, and vulnerability with darker sounds.
+
+💗 Lover
+A colorful return to romance, self-acceptance, and bright pop anthems.
+
+🌲 Folklore
+A soft, indie-folk pivot filled with introspective storytelling and fictional narratives.
+
+🍂 Evermore
+Folklore’s sister album—mature, moody, and lyrically rich with quiet intensity.
+
+🌌 Midnights
+Dreamy synth-pop exploring late-night thoughts, reflection, and reinvention.
+
+📖 The Tortured Poets Department
+A literary, emotionally complex exploration of heartbreak, healing, and artistry.
+
+
         """)
 
 st.markdown("""
