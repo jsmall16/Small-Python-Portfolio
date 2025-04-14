@@ -97,9 +97,11 @@ album_colors = {
 # Filter only albums in list
 main_df = swift_songs[swift_songs['album'].isin(release_order)].copy()
 
-# Summarize total word count per album
+# Add a new column 'word_count' by counting the number of words in each song's lyrics
 main_df['word_count'] = main_df['lyrics'].str.split().apply(len)
+# Group the data by album and sum the word counts to get total words per album
 album_totals = main_df.groupby('album')['word_count'].sum().reset_index()
+# Rename the columns for clarity
 album_totals.columns = ['album', 'total_word_count']
 
 # Sorts the DataFrame based on the custom order I set
