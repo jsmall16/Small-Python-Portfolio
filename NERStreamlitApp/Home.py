@@ -4,6 +4,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+import os
+st.write("Files in current directory:", os.listdir())
+
 # Title and header image
 st.title("Taylor Swift's Lyrical Legacy")
 st.image('TSNERIMAGE.jpeg')
