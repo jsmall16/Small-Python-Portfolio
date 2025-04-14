@@ -59,7 +59,7 @@ This project complements my overall portfolio by demonstrating my ability to cle
 
 **Description:** Taylor Swift’s lyrics have captivated fans for over two decades, evolving across genres and emotional themes. This project combines custom Named Entity Recognition (NER) with lyrical data analysis to offer a deeper look at her discography. Using spaCy, users can define their own entities and highlight them in her lyrics. Additionally, album word counts are visualized to track the evolution of her writing style. The app enables both fans and data enthusiasts to interactively explore Taylor Swift’s lyrical legacy through natural language processing and data storytelling.
 
-**Skills:** This project highlights my skills in NLP (spaCy), Streamlit app development, and data visualization with Matplotlib and Seaborn. The app integrates multiple Python libraries into a user-friendly tool that reveals narrative patterns and trends across Taylor Swift's albums and lyrics.
+**Skills:** This project highlights my skills in NLP (spaCy), Streamlit app development, and data visualization with Matplotlib and Seaborn. The app integrates multiple Python libraries into a user-friendly tool that reveals trends across Taylor Swift's albums and lyrics.
 
 This project complements my broader coding portfolio by showcasing my ability to combine technical skills in NLP, web app development, and data storytelling. It blends natural language processing with interactive data exploration, demonstrating my versatility and the ability to apply analytical techniques in engaging ways.
 
