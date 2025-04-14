@@ -81,7 +81,6 @@ To get started installing the app:
 1. Clone the repository:
 ```bash
 git clone https://github.com/jsmall16/Small-Python-Portfolio.git
-cd Small-Python-Portfolio/NERStreamlitApp
 ```
 
 2. Run this command to view the files in the project folder:
