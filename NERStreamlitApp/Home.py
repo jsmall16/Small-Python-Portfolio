@@ -54,7 +54,7 @@ Below is the **total word count** for each album, displayed in release order, us
 """)
 
 # Load and clean song lyric dataset to perform visualizations 
-swift_songs = pd.read_csv("Data/songs.csv")
+swift_songs = pd.read_csv("NERStreamlitApp/Data/songs.csv")
 
 # Rename and standardize column names
 swift_songs = swift_songs.rename(columns={"Title": "song", "Album": "album", "Lyrics": "lyrics"})
