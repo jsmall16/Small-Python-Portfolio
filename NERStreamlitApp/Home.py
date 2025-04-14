@@ -35,40 +35,18 @@ st.markdown("""
                 From country storytelling to poetry, explore how her words have grown alongside her sound:
                 """)
 st.markdown("""
-🤠 Taylor Swift
-Her debut country album, full of youthful storytelling and heartfelt teen anthems.
-
-🌟 Fearless (Taylor’s Version)
-Breakout album with glittery country-pop hits about love, heartbreak, and growing up.
-
-💜 Speak Now (Taylor’s Version)
-Entirely self-written; blends fairytale themes with raw confessions and emotional ballads.
-
-❤️ Red (Taylor’s Version)
-A genre-blending, emotionally intense album exploring love, loss, and longing.
-
-💎 1989 (Taylor’s Version)
-Polished synth-pop transformation with catchy hooks and big city energy.
-
-🖤 Reputation
-A bold, edgy reinvention tackling fame, revenge, and vulnerability with darker sounds.
-
-💗 Lover
-A colorful return to romance, self-acceptance, and bright pop anthems.
-
-🌲 Folklore
-A soft, indie-folk pivot filled with introspective storytelling and fictional narratives.
-
-🍂 Evermore
-Folklore’s sister album—mature, moody, and lyrically rich with quiet intensity.
-
-🌌 Midnights
-Dreamy synth-pop exploring late-night thoughts, reflection, and reinvention.
-
-📖 The Tortured Poets Department
-A literary, emotionally complex exploration of heartbreak, healing, and artistry.
-
-
+        
+- 🤠 Taylor Swift: her debut country album
+- 🌟 Fearless (Taylor’s Version): breakout album with country-pop hits 
+- 💜 Speak Now (Taylor’s Version): Entirely self-written album with themes of fairytales
+- ❤️ Red (Taylor’s Version): a blend of genres that explores intense emotions of love and loss
+- 💎 1989 (Taylor’s Version): synth-pop album with catchy choruses and themes of independence and friendship
+- 🖤 Reputation: an album of boldness, revenge, and reinvention
+- 💗 Lover: a romance pop album filled with whimsy
+- 🌲 Folklore: indie-folk album focused on fictional narratives and storytelling
+- 🍂 Evermore: Folklore’s sister album with more mature storylines and themes
+- 🌌 Midnights: synth-pop album that explores late-night thoughts and reflections
+- 📖 The Tortured Poets Department: a potetic dive into heartbreak and healing
         """)
 
 st.markdown("""
