@@ -57,11 +57,11 @@ This project complements my overall portfolio by demonstrating my ability to cle
 
 **TLDR:** An interactive Streamlit app that uses NLP and data visualization to explore Taylor Swift’s lyrics. Fans can upload lyrics, define custom entity patterns with spaCy’s EntityRuler, and analyze word counts across albums to uncover trends in her storytelling.
 
-**Description:** Taylor Swift’s lyrics have captivated fans for over a decade, evolving across genres and emotional themes. This project combines custom Named Entity Recognition (NER) with lyrical data analysis to offer a deeper look at her discography. Using spaCy, users can define their own entities and highlight them in lyrics. Additionally, word counts per album are visualized to track the transformation of her writing style over time. The app enables both fans and data enthusiasts to interactively explore Swift’s lyrical legacy through natural language and visual storytelling.
+**Description:** Taylor Swift’s lyrics have captivated fans for over two decades, evolving across genres and emotional themes. This project combines custom Named Entity Recognition (NER) with lyrical data analysis to offer a deeper look at her discography. Using spaCy, users can define their own entities and highlight them in her lyrics. Additionally, album word counts are visualized to track the evolution of her writing style. The app enables both fans and data enthusiasts to interactively explore Taylor Swift’s lyrical legacy through natural language processing and data storytelling.
 
-**Skills:** This project demonstrates my proficiency in NLP using spaCy, Streamlit, and data visualizations using Matplotlib and Seaborn. The app integrates multiple Python libraries into a polished, user-friendly tool that reveals narrative patterns and trends across Taylor Swift's albums and lyrics.
+**Skills:** This project highlights my skills in NLP (spaCy), Streamlit app development, and data visualization with Matplotlib and Seaborn. The app integrates multiple Python libraries into a user-friendly tool that reveals narrative patterns and trends across Taylor Swift's albums and lyrics.
 
-This project complements my broader coding portfolio by showcasing my ability to combine technical skills in NLP, web app development, and data storytelling. It is a creative project that blends natural language processing with interactive data exploration, demonstrating my versatility and the ability to apply analytical techniques in engaging ways.
+This project complements my broader coding portfolio by showcasing my ability to combine technical skills in NLP, web app development, and data storytelling. It blends natural language processing with interactive data exploration, demonstrating my versatility and the ability to apply analytical techniques in engaging ways.
 
 **Link to Repository** [NER Streamlit App](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/NERStreamlitApp) 
 
