@@ -50,8 +50,8 @@ st.markdown("""
         """)
 
 st.markdown("""
-Let’s take a data-driven look at how Taylor’s lyrical output has changed across albums.  
-Below is the **total word count** for each album, displayed in release order, using colors that reflect each era’s mood and aesthetic.
+Let’s take a data-driven look into how Taylor’s lyrical output has changed across albums.  
+Below is the total word count for each album, displayed in release order, using colors that reflect each era’s aesthetic.
 """)
 
 # Load and clean song lyric dataset to perform visualizations 
@@ -132,6 +132,6 @@ st.pyplot(fig)
 # Closing Section
 st.markdown("""
 From her debut album to her latest album, Taylor’s songwriting 
-reflects a continuous evolution in both style and substance.
+reflects a continuous evolution.
 
 Navigate through this app to explore deeper insights into her storytelling!""")
