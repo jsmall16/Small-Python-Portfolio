@@ -7,7 +7,7 @@ from spacy import displacy
 
 # Set title and images
 st.title("Custom NER for Taylor Swift Lyrics")
-st.image("pages/TS_Words.jpeg")
+st.image("NERStreamlitApp/pages/TS_Words.jpeg")
 
 # Intro Text
 st.write("""
