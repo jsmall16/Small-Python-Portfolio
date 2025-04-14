@@ -5,8 +5,6 @@ import spacy
 from spacy.pipeline import EntityRuler
 from spacy import displacy
 
-image_path = os.path.join(os.path.dirname(__file__), "pages", "TS_Words.jpeg")
-st.image(image_path)
 
 # Set title and images
 st.title("Custom NER for Taylor Swift Lyrics")
