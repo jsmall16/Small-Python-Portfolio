@@ -49,3 +49,19 @@ This project complements my overall portfolio by demonstrating my ability to cle
 
 **Link to Repository** [Tidy Data Project](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/TidyData-Project) 
 
+
+### 🎤 Taylor Swift's Lyrical Legacy: Custom NER + Visual Insights 🎤
+
+**TLDR:** An interactive Streamlit app that uses NLP and data visualization to explore Taylor Swift’s lyrics. Fans can upload lyrics, define custom entity patterns with spaCy’s EntityRuler, and analyze word counts across albums to uncover trends in her storytelling.
+
+**Description:**  
+Taylor Swift’s lyrics have captivated fans for over a decade, evolving across genres and emotional themes. This project combines custom Named Entity Recognition (NER) with lyrical data analysis to offer a deeper look at her discography. Using spaCy, users can define their own entities (e.g., `LOVE_INTEREST`, `CITY`) and highlight them in lyrics. In parallel, word counts per album are visualized to track the expansion and transformation of her writing style over time. The app enables both casual fans and data enthusiasts to interactively explore Swift’s lyrical legacy through natural language and visual storytelling.
+
+**Skills:**  
+This project demonstrates proficiency in **NLP** using spaCy, interactive interface development with **Streamlit**, and **data visualization** using Matplotlib and Seaborn. I applied **data wrangling**, **custom rule-based entity construction**, and **user-driven input processing** to uncover structured insights from unstructured text. The app integrates multiple Python libraries into a polished, user-friendly tool that reveals narrative patterns and trends across Taylor Swift's albums.
+
+**Portfolio Fit:**  
+This project complements my broader coding portfolio by showcasing my ability to combine technical skills in NLP, web app development, and data storytelling. It adds a creative, user-facing project that blends language processing with interactive data exploration—demonstrating versatility and the ability to apply analytical techniques in engaging and meaningful ways.
+
+**Link to Repository** [NER Streamlit App](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/NERStreamlitApp) 
+
