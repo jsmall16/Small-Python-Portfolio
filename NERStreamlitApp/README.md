@@ -60,7 +60,7 @@ Using the sample lyrics, this is what the output may look like, depending on the
 ---
 ## 💻 How to run the App
 
-You can try the app live here: [**Streamlit App Link**](https://small-python-portfolio-2fw45jygxadqhkbpr2zpaj.streamlit.app/)  
+You can try the app live here: [**Streamlit App Link**](https://small-python-portfolio-4rla67ezewjbec459imbzd.streamlit.app/)  
 
 Or, you can download the app locally. Follow these instructions to learn how to do so!
 
@@ -81,7 +81,6 @@ To get started installing the app:
 1. Clone the repository:
 ```bash
 git clone https://github.com/jsmall16/Small-Python-Portfolio.git
-cd Small-Python-Portfolio/NERStreamlitApp
 ```
 
 2. Run this command to view the files in the project folder:
