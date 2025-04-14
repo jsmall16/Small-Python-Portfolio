@@ -101,9 +101,10 @@ main_df['word_count'] = main_df['lyrics'].str.split().apply(len)
 album_totals = main_df.groupby('album')['word_count'].sum().reset_index()
 album_totals.columns = ['album', 'total_word_count']
 
-# Apply album order and color mapping
+# Sorts the DataFrame based on the custom order I set
 album_totals['album'] = pd.Categorical(album_totals['album'], categories=release_order, ordered=True)
 album_totals = album_totals.sort_values('album')
+# Assigns each album a specific color based on colors I created 
 album_totals['color'] = album_totals['album'].map(album_colors)
 
 # Plot data visualization of word counts per album
