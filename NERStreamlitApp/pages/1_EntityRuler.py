@@ -20,7 +20,7 @@ into custom insights. Add your own rules, define who or what matters, and watch 
 if "saved_patterns" not in st.session_state:
     st.session_state.saved_patterns = []
 
-# Entity Pattern Input Form
+# Entity Pattern Input
 st.subheader("Add Custom Entity Patterns")
 st.write("""
 Start by creating custom labels and keywords you want to recognize. 
@@ -36,7 +36,7 @@ with st.form("add_patterns"): # Creates a form in streamlit
 
     if add and label and pattern_input: # Makes sure user clicked button and entered a pattern/label
         # Convert pattern string into token-based spaCy pattern (case-insensitive)
-        token_pattern = [{"LOWER": w.lower()} for w in pattern_input.strip().split()]
+        token_pattern = [{"LOWER": token.lower()} for token in pattern_input.strip().split()]
         st.session_state.saved_patterns.append({"label": label, "pattern": token_pattern}) # stores the pattern and label
         st.success(f"Added `{pattern_input}` to `{label}`") # confirm addition 
 
