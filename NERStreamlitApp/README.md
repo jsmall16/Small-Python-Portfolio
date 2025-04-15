@@ -60,7 +60,7 @@ Using the sample lyrics, this is what the output may look like, depending on the
 ---
 ## 💻 How to run the App
 
-You can try the app live here: [**Streamlit App Link**](https://small-python-portfolio-tswift-ner.streamlit.app/EntityRuler)  
+You can try the app live here: [**Streamlit App Link**](https://small-python-portfolio-tswift-ner.streamlit.app/)  
 
 Or, you can download the app locally. Follow these instructions to learn how to do so!
 
