@@ -24,7 +24,7 @@ spaCy is a library in Python that is used to conduct Natural Language Processing
 
 ## 🔧 App Features 
 
-## Visualize total word count per album
+## Visualize Total Word Count per Album
 
 ![TSDATA](TSDATA.png)
 
