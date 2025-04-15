@@ -95,7 +95,7 @@ cd NERStreamlitApp
 ```bash
 streamlit run Home.py
 ```
-5. Open the app in your browser. Once the app starts, your terminal will display a local URL. Click this link or copy and paste it into your web browser to start exploring the app.
+5. Once the app starts, your terminal will display a local URL. Click this link or copy and paste it into your web browser to start exploring the app.
    
 ---
 
