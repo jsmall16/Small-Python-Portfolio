@@ -45,8 +45,8 @@ if st.session_state.saved_patterns:
     st.markdown("### Saved Entity Patterns") 
     st.write("Here are the rules you've added so far:")
     df = pd.DataFrame([
-    {"label": p["label"], "pattern": str(p["pattern"])}
-    for p in st.session_state.saved_patterns
+    {"label": pattern["label"], "pattern": str(pattern["pattern"])}
+    for pattern in st.session_state.saved_patterns
     ])
 
 # Text Input Section 
@@ -116,7 +116,7 @@ if text:
 
     # List of Detected Entities
     st.subheader("✅ Entity List")
-    st.write("Here’s a breakdown of the entities we found and how they were labeled:")
+    st.write("Here’s a breakdown of the entities found:")
     
     # If any entities were found, display them 
     if doc.ents:
@@ -127,4 +127,4 @@ if text:
                 **Start Pos:** {ent.start_char} | **End Pos:** {ent.end_char}
                         """)
     else:
-        st.info("No entities found with the current patterns.")
+        st.info("No entities found.")
