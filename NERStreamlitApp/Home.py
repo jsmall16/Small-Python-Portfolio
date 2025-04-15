@@ -119,7 +119,7 @@ sns.barplot(
     data=album_totals, # Data source
     x='album',          # X-axis: album names
     y='total_word_count', # Y-axis: total word counts per album
-    palette=album_totals['color'].tolist(),  #Use custom colors defined per album
+    palette=album_totals['color'].tolist(),  # Use custom colors defined per album
     ax=ax               # Use the axes object created above
 )
 # Label the y-axis
