@@ -36,16 +36,16 @@ st.markdown("""
                 """)
 st.markdown("""
         
-- 🤠 Taylor Swift: her debut country album
-- 🌟 Fearless (Taylor’s Version): breakout album with country-pop hits 
+- 🤠 Taylor Swift: Her debut country album
+- 🌟 Fearless (Taylor’s Version): Breakout album with country-pop hits 
 - 💜 Speak Now (Taylor’s Version): Entirely self-written album with themes of fairytales
-- ❤️ Red (Taylor’s Version): a blend of genres that explores intense emotions of love and loss
-- 💎 1989 (Taylor’s Version): synth-pop album with catchy choruses and themes of independence and friendship
-- 🖤 Reputation: an album of boldness, revenge, and reinvention
-- 💗 Lover: a romance pop album filled with whimsy
-- 🌲 Folklore: indie-folk album focused on fictional narratives and storytelling
+- ❤️ Red (Taylor’s Version): A blend of genres that explores intense emotions of love and loss
+- 💎 1989 (Taylor’s Version): Synth-pop album with catchy choruses and themes of independence and friendship
+- 🖤 Reputation: An album of boldness, revenge, and reinvention
+- 💗 Lover: A romance pop album filled with whimsy
+- 🌲 Folklore: Indie-folk album focused on fictional narratives and storytelling
 - 🍂 Evermore: Folklore’s sister album with more mature storylines and themes
-- 🌌 Midnights: synth-pop album that explores late-night thoughts and reflections
+- 🌌 Midnights: Synth-pop album that explores late-night thoughts and reflections
 - 📖 The Tortured Poets Department: a potetic dive into heartbreak and healing
         """)
 
