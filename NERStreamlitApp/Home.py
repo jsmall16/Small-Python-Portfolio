@@ -46,7 +46,7 @@ st.markdown("""
 - 🌲 Folklore: Indie-folk album focused on fictional narratives and storytelling
 - 🍂 Evermore: Folklore’s sister album with more mature storylines and themes
 - 🌌 Midnights: Synth-pop album that explores late-night thoughts and reflections
-- 📖 The Tortured Poets Department: a potetic dive into heartbreak and healing
+- 📖 The Tortured Poets Department: a poetic dive into heartbreak and healing
         """)
 
 st.markdown("""
@@ -92,7 +92,7 @@ album_colors = {
     "The Tortured Poets Department": "#B0AFAF"
 }
 
-### Anlayze Word Counts 
+### Analyze Word Counts 
 
 # Filter only albums in list
 main_df = swift_songs[swift_songs['album'].isin(release_order)].copy()

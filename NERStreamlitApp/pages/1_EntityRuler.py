@@ -58,7 +58,7 @@ Now choose how you'd like to input text for entity recognition.
 You can use a sample Taylor lyric, paste your own, or upload a `.txt` file.
 """)
 
-# Let user choose how they want to input thier text
+# Let user choose how they want to input their text
 text_method = st.radio("Choose input method:", ["Sample Lyrics", "Paste Text", "Upload .txt File"])
 
 # Initialize an empty string for the text
