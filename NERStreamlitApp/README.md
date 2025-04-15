@@ -24,7 +24,7 @@ spaCy is a library in Python that is used to conduct Natural Language Processing
 
 ## 🔧 App Features 
 
-## Visualize total word count per album
+## Visualize Total Word Count per Album
 
 ![TSDATA](TSDATA.png)
 
@@ -32,11 +32,11 @@ This bar chart shows the total word count for each of Taylor Swift’s main stud
 
 
 ## Custom Named Entity Recognition 
-- Add your own entity labels and keyword patterns (ex-, "James" under "LOVE_INTEREST")
+- Add your own entity labels and keyword patterns (ex- "James" under "LOVE_INTEREST")
 - Upload .txt files, paste in your own lyrics, or use the sample lyrics provided
 - Visualize output with entities highlighted using spaCy’s displacy
 
-A custom Entity ruler is especially useful for Swifties because it lets fans tag and track recurring names, places, and motifs across Taylor’s lyrics. By creating custom labels like LOVE_INTEREST, CITY, or SYMBOL, fans can uncover deeper patterns in her storytelling, whether it’s identifying how often she references New York or spotting easter eggs tied to specific eras.
+A custom Entity Ruler is especially useful for Swifties because it lets fans tag and track recurring names, places, and motifs across Taylor’s lyrics. By creating custom labels like LOVE_INTEREST, CITY, or SYMBOL, fans can uncover deeper patterns in her storytelling, whether it’s identifying how often she references New York or spotting easter eggs tied to specific eras.
 
 ## Example Usage
 **1. Define a pattern:**
@@ -60,7 +60,7 @@ Using the sample lyrics, this is what the output may look like, depending on the
 ---
 ## 💻 How to run the App
 
-You can try the app live here: [**Streamlit App Link**](https://small-python-portfolio-4rla67ezewjbec459imbzd.streamlit.app/)  
+You can try the app live here: [**Streamlit App Link**](https://small-python-portfolio-tswift-ner.streamlit.app/)  
 
 Or, you can download the app locally. Follow these instructions to learn how to do so!
 
@@ -95,7 +95,7 @@ cd NERStreamlitApp
 ```bash
 streamlit run Home.py
 ```
-5. Open the app in your browser. Once the app starts, your terminal will display a local URL. Click this link or copy and paste it into your web browser to start exploring the app.
+5. Once the app starts, your terminal will display a local URL. Click this link or copy and paste it into your web browser to start exploring the app.
    
 ---
 
