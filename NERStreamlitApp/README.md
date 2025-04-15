@@ -32,11 +32,11 @@ This bar chart shows the total word count for each of Taylor Swift’s main stud
 
 
 ## Custom Named Entity Recognition 
-- Add your own entity labels and keyword patterns (ex-, "James" under "LOVE_INTEREST")
+- Add your own entity labels and keyword patterns (ex- "James" under "LOVE_INTEREST")
 - Upload .txt files, paste in your own lyrics, or use the sample lyrics provided
 - Visualize output with entities highlighted using spaCy’s displacy
 
-A custom Entity ruler is especially useful for Swifties because it lets fans tag and track recurring names, places, and motifs across Taylor’s lyrics. By creating custom labels like LOVE_INTEREST, CITY, or SYMBOL, fans can uncover deeper patterns in her storytelling, whether it’s identifying how often she references New York or spotting easter eggs tied to specific eras.
+A custom Entity Ruler is especially useful for Swifties because it lets fans tag and track recurring names, places, and motifs across Taylor’s lyrics. By creating custom labels like LOVE_INTEREST, CITY, or SYMBOL, fans can uncover deeper patterns in her storytelling, whether it’s identifying how often she references New York or spotting easter eggs tied to specific eras.
 
 ## Example Usage
 **1. Define a pattern:**
