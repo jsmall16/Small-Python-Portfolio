@@ -17,7 +17,7 @@ just curious how Lower Manhattan differs from Astoria, you're in the right place
 """)
 
 # --- App Purpose Summary ---
-st.subheader("☕ What's Brewing Inside the App:")
+st.subheader("What's Brewing Inside the App:")
 st.write("""
 This app is designed to help business owners and coffee lovers alike:
 - 🔍 Optimize product offerings and boost sales through sales trends and product insights  
@@ -48,7 +48,5 @@ with col2:
     and how each store’s performance compares.
     """)
 
-# --- Navigation Prompt ---
-st.markdown("---")
-st.write("Head to the **EDA & Visuals** page to explore customer behavior, sales trends, and product preferences across the three stores.")
-st.button('🚀 EDA & Visuals')
+if st.button('☕ Go to EDA & Visuals'):
+    switch_page("EDA_Visuals")
