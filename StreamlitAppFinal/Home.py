@@ -48,5 +48,4 @@ with col2:
     and how each store’s performance compares.
     """)
 
-if st.button('☕ Go to EDA & Visuals'):
-    switch_page("EDA_Visuals")
+st.button('☕ Go to EDA & Visuals')
