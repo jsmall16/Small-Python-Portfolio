@@ -23,6 +23,7 @@ st.write("""
          - Use time series forecasting models to predict future sales and make strategic decisions
         """)
 
+# Making a left-aligned image with right-aligned text (side by side image and text)
 col1, col2 = st.columns([1, 1]) 
 
 with col1:
@@ -31,14 +32,21 @@ with col1:
 with col2:
     st.markdown("""
     ### Coffee Trends Across NYC Neighborhoods
-
-    This dataset includes over 140,000 coffee shop transactions from multiple store locations across Manhattan.
+ 
+    This dataset includes over 140,000 coffee shop transactions from multiple store 
+    locations across Manhattan.
 
     Each transaction is tagged with:
-    - 🗺️ A **neighborhood** like SoHo, Midtown, or the Upper West Side  
+    - 📍 A **neighborhood** like SoHo, Midtown, or the Upper West Side  
     - 📅 A **date and time** of purchase  
     - 🧾 A **product category**, type, and unit price  
-    - 🔢 The **quantity sold** and store-level revenue
+    - 🛍️ The **quantity sold** and store-level revenue
 
-    By analyzing this data, we can uncover which neighborhoods prefer what drinks, when they buy them, and how that affects overall sales performance.
+    By analyzing this data, we can uncover which neighborhoods prefer what drinks, 
+    when they buy them, and how that affects overall sales performance.
     """)
+    st.markdown("---")
+    st.write("Head to the **EDA & Visuals** page to start exploring trends, top products, and neighborhood patterns.")
+    st.button('EDA & Visuals')  
+
+
