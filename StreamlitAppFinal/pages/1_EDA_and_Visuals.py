@@ -128,7 +128,7 @@ ax3.set_ylabel("Quantity Sold")
 st.pyplot(fig3)
 
 # Title to introduce the next chart 
-st.markdown("### Top 5 Coffee Product Types by Quantity (Filtered)")
+st.markdown("### Top 5 Coffee Product Types by Quantity")
 st.write("This chart highlights the five most popular coffee product types, based on quantity sold for the selected filters.")
 
 # Filters the product category to only be coffee
@@ -142,13 +142,13 @@ top_coffee_types = (
 
 fig_coffee, ax_coffee = plt.subplots()
 sns.barplot(x=top_coffee_types.values, y=top_coffee_types.index, palette=['#6F4E37'] * 5, ax=ax_coffee)
-ax_coffee.set_title("Top 5 Coffee Product Types (Filtered)")
+ax_coffee.set_title("Top 5 Coffee Product Types")
 ax_coffee.set_xlabel("Quantity Sold")
 ax_coffee.set_ylabel("Product Type")
 st.pyplot(fig_coffee)
 
 # Title to introduce the next chart 
-st.markdown("### Revenue by Store Location (Filtered)")
+st.markdown("### Revenue by Store Location")
 st.write("This bar chart shows which store locations drove the most revenue, based on the selected time period and product categories.")
 
 # Grouping the filtered data by store location 
