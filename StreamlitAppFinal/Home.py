@@ -11,7 +11,7 @@ st.subheader('Where Data Meets Your Daily Brew 📊')
 
 # --- Intro Paragraph ---
 st.write("""
-Welcome to **City Sips**, your go-to tool for brewing smarter business decisions and 
+City Sips is your go-to tool for brewing smarter business decisions and 
 exploring how New Yorkers enjoy their coffee. Whether you're a coffee shop executive or 
 just curious how Lower Manhattan differs from Astoria, you're in the right place!
 """)
