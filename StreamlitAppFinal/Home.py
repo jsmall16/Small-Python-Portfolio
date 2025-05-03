@@ -28,13 +28,12 @@ This app is designed to help business owners and coffee lovers alike:
 st.markdown("""### Coffee Trends from the Ground Up 🌱""")
 st.write("""This dataset includes over **140,000 transactions** from **three unique store locations** across New York City:  
     **Lower Manhattan**, **Hell’s Kitchen**, and **Astoria**.""")
-st.image("Images/Beans.jpeg")
 st.markdown("""
     Each transaction is tagged with:
-    - 📍 A **store location**  
-    - 📅 A **date and time** of purchase  
-    - 🧾 A **product category**, type, and unit price  
-    - 🛍️ The **quantity sold** and store-level revenue
+    -  A **store location**  
+    -  A **date and time** of purchase  
+    -  A **product category**, type, and unit price  
+    -  The **quantity sold** and store-level revenue
 
     By analyzing this data, we can uncover what customers are drinking, when they’re buying it, 
     and how each store’s performance compares.
