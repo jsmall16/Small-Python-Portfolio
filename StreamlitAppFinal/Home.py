@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # --- Homepage Title and Hero Image ---
-st.title('☕️ Welcome to City Sips! ☕️')
+st.title('Welcome to City Sips! ☕️')
 st.image('Images/Coffeeshop.jpg')
 st.subheader('Where Data Meets Your Daily Brew 📊')
 

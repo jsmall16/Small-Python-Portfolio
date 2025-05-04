@@ -1,40 +1,66 @@
-# Import necessary libraries
-import streamlit as st
-import pandas as pd 
-import matplotlib.pyplot as plt
+# Importing necessary libraries for data manipulation and visualization 
+import pandas as pd
+import numpy as np
 import seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
+import matplotlib.pyplot as plt
+import streamlit as st
+# Libraries for regression 
+from sklearn.model_selection import train_test_split # for splitting the data 
+from sklearn.linear_model import LinearRegression # for modeling
+from sklearn.metrics import mean_squared_error, r2_score # for evaluating model performance 
 
+
+# Load the dataset
 coffee_data = pd.read_csv('Data/Cleaned_Data.csv')
+
+# Data cleaning 
+# Ensures unit price and quantity are numeric data types. If not, sets them as NaN
 coffee_data['unit_price'] = pd.to_numeric(coffee_data['unit_price'], errors='coerce')
 coffee_data['transaction_qty'] = pd.to_numeric(coffee_data['transaction_qty'], errors='coerce')
+# Creates a new column to calculate the total sale amount for each transaction
 coffee_data['total_sales'] = coffee_data['unit_price'] * coffee_data['transaction_qty']
+
+# Drop rows with missing values
 coffee_data.dropna(subset=['unit_price', 'transaction_qty', 'store_location', 'product_category', 'day_of_week', 'hour'], inplace=True)
 
-# --- One-hot encode categorical variables ---
-data_encoded = pd.get_dummies(coffee_data[['unit_price', 'hour', 'store_location', 'product_category', 'day_of_week']], drop_first=True)
-X = data_encoded
-y = coffee_data['total_sales']
+# Keep numeric features separate
+numeric_features = coffee_data[['unit_price', 'hour']]
 
-# --- Train/test split ---
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Converting categorical variables into dummy variables 
+categorical_features = pd.get_dummies(
+    coffee_data[['store_location', 'product_category', 'day_of_week']],
+    drop_first=True
+)
 
-# --- Train the linear regression model ---
+# Combine them into one variable that contains all the predictors 
+coffee_data_encoded = pd.concat([numeric_features, categorical_features], axis=1)
+
+# Define features and target
+X = coffee_data_encoded # independent variables (different predictors you are testing)
+y = coffee_data['total_sales'] # dependent variable (target variable)
+
+# Split the data into training and testing sets 
+X_train, X_test, y_train, y_test = train_test_split(X, y,
+                                                    test_size=0.2, 
+                                                    random_state=42)
+
+# Train the linear regression on the training data 
 model = LinearRegression()
 model.fit(X_train, y_train)
+
+# Make predictions using the testing data
 y_pred = model.predict(X_test)
 
-# --- Model evaluation ---
+# Evaluate model performance (mean squared error and r squared)
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 
-# --- Streamlit App Layout ---
+# Preparing the streamlit app
+# Create streamlit title
 st.title("Predicting Coffee Shop Sales 📈")
 
 st.markdown("""
-Using a **linear regression model**, this dashboard predicts total sales based on:
+Using a linear regression model, this dashboard predicts total sales based on:
 - Unit Price
 - Hour of Day
 - Store Location
@@ -42,7 +68,7 @@ Using a **linear regression model**, this dashboard predicts total sales based o
 - Day of Week
 """)
 
-# --- Visualize actual vs predicted ---
+# Creating a scatterplot to compare the actual testing data vs. the predictions 
 st.markdown("### Actual vs. Predicted Sales")
 fig, ax = plt.subplots()
 sns.scatterplot(x=y_test, y=y_pred, alpha=0.5, color="#6F4E37", edgecolor="w")
@@ -51,32 +77,37 @@ ax.set_ylabel("Predicted Total Sales")
 ax.set_title("Actual vs. Predicted Total Sales")
 st.pyplot(fig)
 
-# --- Commentary ---
-st.markdown("""
-The model performs well overall, explaining around **71%** of the variance in sales. Some variance at extreme values
-suggests future models could benefit from more granular features or nonlinear modeling techniques.
+st.markdown(f"""
+The model performs well overall, explaining around **{r2:.2%}** of the variance in sales.  
 """)
 
-# Get feature importance
+# Extracts the coefficients and sorts them in order of importance (influence) on the predictive model
 coefficients = pd.Series(model.coef_, index=X.columns).sort_values()
 
-
-# Plot top and bottom 10
 st.markdown("### Most Influential Predictors")
+
+# Top 10 Positive Predictors that increase total sales
 fig_imp, ax_imp = plt.subplots(figsize=(8, 6))
 coefficients.tail(10).plot(kind='barh', color='#6F4E37', ax=ax_imp)
 ax_imp.set_title("Top 10 Positive Predictors")
 st.pyplot(fig_imp)
 
+# Top 10 Negative Predictors that decrease total sales
 fig_imp2, ax_imp2 = plt.subplots(figsize=(8, 6))
 coefficients.head(10).plot(kind='barh', color='gray', ax=ax_imp2)
 ax_imp2.set_title("Top 10 Negative Predictors")
 st.pyplot(fig_imp2)
 
-st.write("""Based on our linear regression model, the strongest drivers of total 
-         sales include higher unit price items like Drinking Chocolate, Tea, and Coffee.
-         Transactions in Lower Manhattan and on Saturdays also tend to be larger in value. 
-         On the flip side, categories like Coffee Beans and Branded Merchandise are linked 
-         to lower total sales, along with midweek purchases and Sunday traffic. These insights 
-         help identify what products and time slots are most profitable — valuable input for 
-         inventory planning and promotional strategies""")
+st.markdown("### ☕ So What’s Brewing in Sales Trends?")
+
+st.write("""
+Higher-priced drinks like Drinking Chocolate, Signature Teas, and Specialty Coffees are the best-performing items.
+Saturdays and the Lower Manhattan café consistently see larger transactions — think weekend rushes, office escapees, 
+and tourists needing a caffeine fix.""")
+
+st.write("""Meanwhile, Coffee Beans and Branded Merch tend to bring in smaller totals, likely because they’re often purchased solo or gifted. 
+         We also see a bit of a midweek slump — Tuesdays and Sundays** trail behind, which might be the perfect window for happy hour promos 
+         or loyalty points.""")
+
+st.write("""Bottom line? These patterns help us plan smarter: when to stock up, what to feature, and how to keep the espresso shots — and sales — flowing.
+""")
