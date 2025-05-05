@@ -34,8 +34,16 @@ This section allows users to interact with the data more closely to gain more pe
 
 <img src="Images/Filters.png" alt="Filters" width="600">
 
+There are many different visuals in this app that change dyanmically with user selections. These relate to product category, time of day, day of week, and store location. 
+
+<img src="Images/Bar-graph.png" alt="Graph" width="600">
+
+### 3️⃣ Machine Learning Model 
+
+The final page of this app utilizes a linear regression model with a ~70% explainability to assess the most and least influential predictors for coffee shop sales. The goal of implementing this model is to help the users identify what factors will forecast future sales, allowing them to stock and staff appropriately. 
+
+<img src="Images/Predicted.png" alt="Predicted vs. actuals" width="600">
+
+<img src="Images/Influential.png" alt="Predictors" width="600">
 
 
-
-
-3️⃣
