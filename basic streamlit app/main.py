@@ -22,36 +22,51 @@ st.markdown("### Full Penguins Dataset")
 st.dataframe(penguins)
 st.write("Here is the full dataset comprising the different penguin attributes!")
 
-# --- Species Filter 
-st.markdown("### 🔍 Filter by Species")
-st.write("Filter by different penguin species to explore individual penguin features!")
+# Species and Island Filter 
+st.markdown("### 🔍 Filter by Species and Island")
+st.write("Filter by penguin species and their island habitat to explore more specific data slices.")
+
+# Dropdowns for filtering
 species_list = penguins["species"].dropna().unique()
-selected_species = st.selectbox("Choose a species:", species_list)
+island_list = penguins["island"].dropna().unique()
 
-filtered_data = penguins[penguins["species"] == selected_species]
+# Create two different columns to have the filters
+col1, col2 = st.columns(2)
+with col1:
+    selected_species = st.selectbox("Choose a species:", species_list)
+with col2:
+    selected_island = st.selectbox("Choose an island:", island_list)
 
-st.markdown(f"#### Displaying data for: `{selected_species}`")
+# Apply both filters
+filtered_data = penguins[
+    (penguins["species"] == selected_species) & 
+    (penguins["island"] == selected_island)
+]
+
+# Display filtered data
+st.markdown(f"#### Displaying data for `{selected_species}` penguins on `{selected_island}`")
 st.dataframe(filtered_data)
 
-# Summary Stats
+# Summary Stats for filtered data
 st.markdown("### Summary Statistics")
-st.write("Let's explore some basic summary statistics!")
+st.write(f"Let's explore summary statistics for the `{selected_species}` penguins on `{selected_island}`:")
 st.write(filtered_data.describe())
 
-# Visualization 
-st.write("In order to get a better sense of the data, let's visualize the body mass of the penguins by species!")
-st.markdown("### 🧊 Average Body Mass by Species")
-avg_mass = penguins.groupby("species")["body_mass_g"].mean().reset_index()
+# Visualization of body mass by species
+st.markdown("### Count of Penguins by Species")
+st.write("To get a better sense of the data, let's look at how many penguins there are of each species.")
 
+# Create the count data
+species_counts = penguins["species"].value_counts().reset_index()
+species_counts.columns = ["species", "count"]
+
+# Plotting
 fig, ax = plt.subplots()
-ax.bar(avg_mass["species"], avg_mass["body_mass_g"])
-ax.set_ylabel("Average Body Mass (g)")
+ax.bar(species_counts["species"], species_counts["count"], color="skyblue")
+ax.set_ylabel("Count")
 ax.set_xlabel("Species")
-ax.set_title("Average Body Mass per Penguin Species")
+ax.set_title("Number of Penguins per Species")
 
 st.pyplot(fig)
 
-# Closing Message
-st.markdown("---")
-st.success("Happy exploring!")
- 
+st.markdown("## Thanks for waddling through the data with us!")
