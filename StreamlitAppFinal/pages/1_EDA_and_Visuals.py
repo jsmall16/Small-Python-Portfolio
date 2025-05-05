@@ -98,7 +98,7 @@ st.pyplot(fig2)
 
 # Title to introduce the next chart 
 st.markdown("### Sales by Day of Week")
-st.write("This chart shows total quantity sold across each day of the week, helping spot strong weekday or weekend performance.")
+st.write("This chart shows total quantity sold across each day of the week, helping to identify strong daily performances.")
 
 
 # Groups the filtered data by day_of_week
@@ -148,7 +148,7 @@ revenue_by_location = (
 fig_loc, ax_loc = plt.subplots() 
 sns.barplot(x=revenue_by_location.index, y=revenue_by_location.values,
             palette=['#A67B5B', '#C19A6B', '#8B6C42'], ax=ax_loc)
-ax_loc.set_title("Total Revenue by Store Location (Filtered)")
+ax_loc.set_title("Total Revenue by Store Location")
 ax_loc.set_xlabel("Store Location")
 ax_loc.set_ylabel("Revenue")
 st.pyplot(fig_loc)

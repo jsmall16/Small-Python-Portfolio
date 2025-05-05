@@ -60,12 +60,14 @@ r2 = r2_score(y_test, y_pred)
 st.title("Predicting Coffee Shop Sales 📈")
 
 st.markdown("""
-Using a linear regression model, this dashboard predicts total sales based on:
-- Unit Price
-- Hour of Day
-- Store Location
-- Product Category
-- Day of Week
+The most important thing for any business owner is to forecast when they will have the most sales, 
+in order to ensure that they have the necessary staffing and supply to keep up with it. Knowing these trends can be
+critical to improving the customer experience. Using a linear regression model, this dashboard predicts total sales based on:
+    - Unit Price
+    - Hour of Day
+    - Store Location
+    - Product Category
+    - Day of Week
 """)
 
 # Creating a scatterplot to compare the actual testing data vs. the predictions 
@@ -78,13 +80,17 @@ ax.set_title("Actual vs. Predicted Total Sales")
 st.pyplot(fig)
 
 st.markdown(f"""
-The model performs well overall, explaining around **{r2:.2%}** of the variance in sales.  
+As we can see, the model we deployed for this data performed well, explaining around **{r2:.2%}** of the variance in sales.  
+Therefore, it serves as a useful modeling for forecasting when these coffee shops will be the most successful. 
 """)
 
 # Extracts the coefficients and sorts them in order of importance (influence) on the predictive model
 coefficients = pd.Series(model.coef_, index=X.columns).sort_values()
 
 st.markdown("### Most Influential Predictors")
+st.write("""These graphs display the most influential predictors that lead to an increase or 
+            decrease in sales.
+         """)
 
 # Top 10 Positive Predictors that increase total sales
 fig_imp, ax_imp = plt.subplots(figsize=(8, 6))
@@ -101,13 +107,15 @@ st.pyplot(fig_imp2)
 st.markdown("### ☕ So What’s Brewing in Sales Trends?")
 
 st.write("""
-Higher-priced drinks like Drinking Chocolate, Signature Teas, and Specialty Coffees are the best-performing items.
-Saturdays and the Lower Manhattan café consistently see larger transactions — think weekend rushes, office escapees, 
-and tourists needing a caffeine fix.""")
+        Higher-priced drinks like Drinking Chocolate, Signature Teas, and Specialty Coffees are the best-performing items that 
+        ultimately drive the most sales. Saturdays in Lower Manhattan consistently see larger transactions, possibly due to the nature
+        of the weekend or tourists.
+        """)
 
-st.write("""Meanwhile, Coffee Beans and Branded Merch tend to bring in smaller totals, likely because they’re often purchased solo or gifted. 
-         We also see a bit of a midweek slump — Tuesdays and Sundays** trail behind, which might be the perfect window for happy hour promos 
-         or loyalty points.""")
+st.write("""
+         Meanwhile, Coffee Beans and Branded Merch tend to bring in smaller totals. There is also a bit of a midweek slump, with Tuesdays and Sundays
+         trailing behind.
+         """)
 
-st.write("""Bottom line? These patterns help us plan smarter: when to stock up, what to feature, and how to keep the espresso shots — and sales — flowing.
+st.write("""These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keeep sales flowing.
 """)
