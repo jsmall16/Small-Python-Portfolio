@@ -116,5 +116,5 @@ st.write("""
          trailing behind.
          """)
 
-st.markdown("""###These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keeep sales flowing.
+st.markdown("""### These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keeep sales flowing.
 """)
