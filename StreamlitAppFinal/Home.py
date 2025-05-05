@@ -31,7 +31,7 @@ st.markdown("""
     -  A product category, type, and unit price  
     -  The quantity sold and revenue
 
-    By analyzing this data, we can uncover what customers are drinking, when they’re buying it, 
+    By sanalyzing this data, we can uncover what customers are drinking, when they’re buying it, 
     and how each store’s performance compares to one another. 
     """)
 st.markdown("### Use the sidebar on the left to navigate to **EDA & Visuals**!")
