@@ -17,5 +17,12 @@ This app uses the Maven Roasters: Coffee Shop Sales & Revenue Data from [Kaggle]
     - Date/time of purchase
     - Product category and unit price
     - Quantity sold and total revenue
-      
+
 This dataset is critical for providing stakeholders with strategic insights to understand product performance and user behavior.
+
+## App Features 
+
+1️⃣ **Sidebar Navigation**
+![Sidebar](Images/Sidebar.jpg)
+2️⃣
+3️⃣
