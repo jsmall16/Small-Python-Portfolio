@@ -6,7 +6,7 @@ import seaborn as sns
 
 # Data Cleaning Steps:
 # Load and parse dataset
-coffee_data = pd.read_csv('StreamlitAppFinal/Data/Cleaned_Data.csv')
+coffee_data = pd.read_csv('StreamlitAppFinal/Data/coffee-shop-data.csv')
 
 # Converting the date columns into datetime objects for easy aggregation
 coffee_data['transaction_date'] = pd.to_datetime(coffee_data['transaction_date'])

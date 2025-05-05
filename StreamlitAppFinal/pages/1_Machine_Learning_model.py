@@ -11,7 +11,7 @@ from sklearn.metrics import mean_squared_error, r2_score # for evaluating model 
 
 
 # Load the dataset
-coffee_data = pd.read_csv('StreamlitAppFinal/Data/Cleaned_Data.csv')
+coffee_data = pd.read_csv('StreamlitAppFinal/Data/coffee-shop-data.csv')
 
 # Data cleaning 
 # Ensures unit price and quantity are numeric data types. If not, sets them as NaN
