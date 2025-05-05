@@ -26,7 +26,7 @@ coffee_palette = ['#A67B5B', '#C19A6B', '#8B6C42', '#D2B48C', '#6F4E37']
 
 # Create a page introduction section
 st.markdown("## Behind the Beans: NYC coffee insights")
-st.write("A data-rich dive into what, where, and when New Yorkers are sipping. Use the filters below to explore sales performance by category, time, and location.")
+st.write("Let's dive into what, where, and when New Yorkers are sipping. Use the filters below to explore sales performance by category, time, and location.")
 
 ### filtering section 
 
@@ -66,19 +66,6 @@ filtered_data = coffee_data[
     (coffee_data['store_location'].isin(selected_locations)) &
     (coffee_data['product_category'].isin(selected_categories))
 ]
-
-# Creating a summary of Key Performance Indicators (Summary Statistics)
-st.markdown("### Key Metrics") # Title
-col1, col2, col3 = st.columns(3) # same as before, creating 3 columns to place text side by side
-
-# Creates a metric box and calculates the sum, of the revenue column in the filtered data with commans and 0 decimal places
-col1.metric("💵 Total Revenue", f"${filtered_data['revenue'].sum():,.0f}")
-
-# Creates a metric box and calculates the number of unique transactions from the transaction_id filtered column (0 decimal places)
-col2.metric("🧾 Transactions", f"{filtered_data['transaction_id'].nunique():,.0f}")
-
-# Creates a metric box and calculates the sum from the transaction_qty of the filtered dataframe (0 decimal places)
-col3.metric("📦 Total Items Sold", f"{filtered_data['transaction_qty'].sum():,.0f}")
 
 # Title to introduce the next chart
 st.markdown("###  Sales by Product Category")
