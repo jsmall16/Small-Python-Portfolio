@@ -99,5 +99,6 @@ streamlit run Home.py
 
 - [Streamlit Cheat sheet](https://cheat-sheet.streamlit.app/)
 - [from Data-to-Viz Help Documentation](https://www.data-to-viz.com/)
-- [Build a Dashboard in Python Using Streamlit](https://blog.streamlit.io/crafting-a-dashboard-app-in-python-using-streamlit/) 
+- [Build a Dashboard in Python Using Streamlit](https://blog.streamlit.io/crafting-a-dashboard-app-in-python-using-streamlit/)
+- [Scikit Learn Train-Test-Split Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
 
