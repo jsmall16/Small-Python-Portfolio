@@ -22,17 +22,20 @@ This dataset is critical for providing stakeholders with strategic insights to u
 
 ## App Features 
 
-1️⃣ **Sidebar Navigation**
+### 1️⃣ **Sidebar Navigation**
 
 The sidebar feature of this app allows you to toggle between different pages, exploring the Home Page, the EDA & Visuals Page, and the Machine Learning Model Page. 
 
-<img src="Images/Sidebar.png" alt="Sidebar Navigation" width="400">
+<img src="Images/Sidebar.png" alt="Sidebar Navigation" width="600">
 
-2️⃣ **Exploratory Data Analysis**
+### 2️⃣ **Exploratory Data Analysis**
 
-This section allows users to interact with the data more closely to gain more personalized insights. 
+This section allows users to interact with the data more closely to gain more personalized insights. Users can filter by Month, Store location, or Product Category, to get the most out of their visualizations. 
 
-Users can filter by Month, Store location, or Product Category, to get the most out of their visualizations. 
+<img src="Images/Filters.png" alt="Filters" width="600">
+
+
+
 
 
 3️⃣
