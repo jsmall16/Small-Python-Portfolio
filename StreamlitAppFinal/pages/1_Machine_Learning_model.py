@@ -63,11 +63,11 @@ st.markdown("""
 The most important thing for any business owner is to forecast when they will have the most sales, 
 in order to ensure that they have the necessary staffing and supply to keep up with it. Knowing these trends can be
 critical to improving the customer experience. Using a linear regression model, this dashboard predicts total sales based on:
-    - Unit Price
-    - Hour of Day
-    - Store Location
-    - Product Category
-    - Day of Week
+- Unit Price
+- Hour of Day
+- Store Location
+- Product Category
+- Day of Week
 """)
 
 # Creating a scatterplot to compare the actual testing data vs. the predictions 
@@ -80,8 +80,7 @@ ax.set_title("Actual vs. Predicted Total Sales")
 st.pyplot(fig)
 
 st.markdown(f"""
-As we can see, the model we deployed for this data performed well, explaining around **{r2:.2%}** of the variance in sales.  
-Therefore, it serves as a useful modeling for forecasting when these coffee shops will be the most successful. 
+As we can see, the model we deployed for this data performed well, explaining around **{r2:.2%}** of the variance in sales. Therefore, it serves as a useful modeling for forecasting when these coffee shops will be the most successful. 
 """)
 
 # Extracts the coefficients and sorts them in order of importance (influence) on the predictive model
