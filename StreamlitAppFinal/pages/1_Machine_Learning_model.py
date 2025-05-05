@@ -103,7 +103,7 @@ coefficients.head(10).plot(kind='barh', color='gray', ax=ax_imp2)
 ax_imp2.set_title("Top 10 Negative Predictors")
 st.pyplot(fig_imp2)
 
-st.markdown("### ☕ So What’s Brewing in Sales Trends?")
+st.markdown("### So What’s Brewing in Sales Trends? ☕")
 
 st.write("""
         Higher-priced drinks like Drinking Chocolate, Signature Teas, and Specialty Coffees are the best-performing items that 
