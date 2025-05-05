@@ -25,7 +25,6 @@ for col in ['store_location', 'product_category', 'product_type', 'product_detai
 coffee_palette = ['#A67B5B', '#C19A6B', '#8B6C42', '#D2B48C', '#6F4E37']
 
 # Create a page introduction section
-st.image("Images/Beans.jpeg")
 st.markdown("## Behind the Beans: NYC coffee insights")
 st.write("A data-rich dive into what, where, and when New Yorkers are sipping. Use the filters below to explore sales performance by category, time, and location.")
 
