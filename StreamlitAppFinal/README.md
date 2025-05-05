@@ -7,7 +7,7 @@ City Sips is an interactive Streamlit app that helps NYC coffee shop owners and 
 - Which products generate the most revenue
 - What locations have the most sales
 - What time of day should inventory be the most stocked
-- And more!
+- ...And more!
 
 ## Dataset Description
 This app uses the Maven Roasters: Coffee Shop Sales & Revenue Data from [Kaggle](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset/code). This dataset contains: 
