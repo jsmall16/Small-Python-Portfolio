@@ -9,5 +9,13 @@ City Sips is an interactive Streamlit app that helps NYC coffee shop owners and 
 - And more!
 
 ## Dataset Description
-This app uses the Maven Roasters: Coffee Shop Sales & Revenue Data from [Kaggle](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset/code)
-
+This app uses the Maven Roasters: Coffee Shop Sales & Revenue Data from [Kaggle](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset/code). This dataset contains: 
+- Over 140,000 transactions collected from 3 different store locations:
+    - **Lower Manhattan, Hell's Kitchen, & Astoria**
+- Each transaction includes:
+    - Store location
+    - Date/time of purchase
+    - Product category and unit price
+    - Quantity sold and total revenue
+      
+This dataset is critical for providing stakeholders with strategic insights to understand product performance and user behavior.
