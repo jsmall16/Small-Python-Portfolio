@@ -2,7 +2,7 @@
 
 ![Penguins](Penguins_background.jpeg)
 
-Calling all penguin lovers! This **Penguins App** provides a clean and organized way to analyze penguin characteristics while enhancing accessibility and usability. It is the perfect tool for any data scientist or penguin enthusiast!
+Calling all penguin lovers! The Penguins App offers a clear, user-friendly way to explore penguin characteristics, making data analysis more accessible and engaging. It is the perfect tool for any data scientist or penguin enthusiast!
 
 ## Project Overview
 
