@@ -23,7 +23,7 @@ coffee_data['total_sales'] = coffee_data['unit_price'] * coffee_data['transactio
 coffee_data.dropna(subset=['unit_price', 'transaction_qty', 'store_location', 'product_category', 'day_of_week', 'hour'], inplace=True)
 
 # Keep numeric features separate
-numeric_features = coffee_data[['unit_price', 'hour']]
+numeric_features = coffee_data[['unit_price', 'hour', 'transaction_qty']]
 
 # Converting categorical variables into dummy variables 
 categorical_features = pd.get_dummies(
