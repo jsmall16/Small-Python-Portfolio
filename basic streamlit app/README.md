@@ -15,16 +15,19 @@ This app will help users to develop an understanding of:
 
 
 ## Dataset Description
-This app uses the Maven Roasters: Coffee Shop Sales & Revenue Data from [Kaggle](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset/code). This dataset contains: 
-- Over 140,000 transactions collected from 3 different store locations:
-    - **Lower Manhattan, Hell's Kitchen, & Astoria**
-- Each transaction includes:
-    - Store location
-    - Date/time of purchase
-    - Product category and unit price
-    - Quantity sold and total revenue
 
-This dataset is critical for providing stakeholders with strategic insights to understand product performance and user behavior.
+This app uses the [Palmer's Penguins Dataset](data/penguins.csv), where each row corresponds to a unique penguin and details their attributes, such as their:
+
+- species
+- island
+- bill length (mm) 
+- bill depth (mm)
+- flipper length (mm)
+- body mass (g)
+- sex
+- year
+
+It contains all of the necessary features to prep users for their exploration into the world of penguins!
 
 ## App Features 
 
