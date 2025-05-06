@@ -2,7 +2,7 @@
 
 ![Penguins](Penguins_background.jpeg)
 
-Calling all penguin lovers! This **Penguins App** provides a clean and organized way to analyze penguin characteristics while enhancing accessibility and usability. It is the perfect tool for any data scientist or penguin enthusiast!
+Calling all penguin lovers! The Penguins App offers a clear, user-friendly way to explore penguin characteristics, making data analysis more accessible and engaging. It is the perfect tool for any data scientist or penguin enthusiast!
 
 ## Project Overview
 
@@ -18,36 +18,47 @@ This app will help users to develop an understanding of:
 
 This app uses the [Palmer's Penguins Dataset](data/penguins.csv), where each row corresponds to a unique penguin and details their attributes, such as their:
 
-- species
-- island
-- bill length (mm) 
-- bill depth (mm)
-- flipper length (mm)
-- body mass (g)
-- sex
-- year
+- Species
+- Island
+- Bill length (mm) 
+- Bill depth (mm)
+- Flipper length (mm)
+- Body mass (g)
+- Sex
+- Year
 
 It contains all of the necessary features to prep users for their exploration into the world of penguins!
 
 ## App Features 
+Let's explore some of the features in the app!
 
+### 1️⃣ **View Entire Dataframe**
+Already loaded into the app, is a concise view of the entire dataset, allowing users to interact with the raw data data and perform their own preliminary explorations.
 
-### 1️⃣ **Sidebar Navigation**
+<img src="Whole_dataset.png" alt="Full data" width="600">
 
+### 2️⃣ **Apply Filters**
+There are also two different dropdown options that allow users to toggle between the islands or species present in the dataset, filtering the dataframe according to their specifications. 
 
-### 2️⃣ **Exploratory Data Analysis**
+<img src="Filters.png" alt="Filters" width="600">
 
+### 3️⃣ View Summaries
+Based on the filtering options the user chose, they can view some basic summary statistics for those penguins, such as the count, mean, standard deviation, min, max, and interquartile range. 
 
-### 3️⃣ Machine Learning Model 
+<img src="Summaries.png" alt="Summaries" width="600">
+
+### 4️⃣ Visualize!
+Finally, at the bottom of the app is a static visualization that helps to picture the distribution of species in this dataset, by displaying a bar chart that shows the count of each species. 
+
+<img src="Vis.png" alt="Visualization" width="600">
 
 
 ## How to run the App
 
-
 ### Make sure you have the required libraries installed
-  - streamlit
-  - pandas
-  - matplotlib
+  - streamlit - app visualization
+  - pandas - data analysis and manipulation 
+  - matplotlib - data visualization
 
 To install them manually:
 ```bash
@@ -80,11 +91,9 @@ streamlit run main.py
 
 ### Data
 
--
+- [Palmer's Penguins Dataset](data/penguins.csv)
 
 ### Documentation 
 
 - [Streamlit Cheat sheet](https://cheat-sheet.streamlit.app/)
 - [from Data-to-Viz Help Documentation](https://www.data-to-viz.com/)
-
-
