@@ -31,14 +31,21 @@ It contains all of the necessary features to prep users for their exploration in
 
 ## App Features 
 
+### 1️⃣ **View Entire Dataframe**
 
-### 1️⃣ **Sidebar Navigation**
+<img src="Whole_dataset.png" alt="Full data" width="600">
 
+### 2️⃣ **Apply Filters**
 
-### 2️⃣ **Exploratory Data Analysis**
+<img src="Filters.png" alt="Filters" width="600">
 
+### 3️⃣ View Summaries
 
-### 3️⃣ Machine Learning Model 
+<img src="Summaries.png" alt="Summaries" width="600">
+
+### 4️⃣ Visualize!
+
+<img src="Vis.png" alt="Visualization" width="600">
 
 
 ## How to run the App
@@ -80,7 +87,7 @@ streamlit run main.py
 
 ### Data
 
--
+- [Palmer's Penguins Dataset](data/penguins.csv)
 
 ### Documentation 
 
