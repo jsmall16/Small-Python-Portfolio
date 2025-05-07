@@ -23,7 +23,7 @@ coffee_data['total_sales'] = coffee_data['unit_price'] * coffee_data['transactio
 coffee_data.dropna(subset=['unit_price', 'transaction_qty', 'store_location', 'product_category', 'day_of_week', 'hour'], inplace=True)
 
 # Keep numeric features separate
-numeric_features = coffee_data[['unit_price', 'hour', 'transaction_qty']]
+numeric_features = coffee_data[['unit_price', 'hour']]
 
 # Converting categorical variables into dummy variables 
 categorical_features = pd.get_dummies(
@@ -67,6 +67,8 @@ critical to improving the customer experience. Using a linear regression model, 
 - Store Location
 - Product Category
 - Day of Week
+
+This model does not rely on quantity, allowing us to better understand the broader trends that drive sales.
 """)
 
 # Creating a scatterplot to compare the actual testing data vs. the predictions 
@@ -79,7 +81,8 @@ ax.set_title("Actual vs. Predicted Total Sales")
 st.pyplot(fig)
 
 st.markdown(f"""
-As we can see, the model we deployed for this data performed well, explaining around **{r2:.2%}** of the variance in sales. Therefore, it serves as a useful modeling for forecasting when these coffee shops will be the most successful. 
+As we can see, the model we deployed for this data performed well, explaining around **{r2:.2%}** of the variance in sales. 
+Therefore, it serves as a useful modeling for forecasting when these coffee shops will be the most successful. 
 """)
 
 # Extracts the coefficients and sorts them in order of importance (influence) on the predictive model
@@ -115,5 +118,5 @@ st.write("""
          trailing behind.
          """)
 
-st.markdown("""### These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keeep sales flowing.
+st.markdown("""### These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keep sales flowing.
 """)
