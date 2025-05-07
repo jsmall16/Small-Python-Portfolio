@@ -13,7 +13,6 @@ The purpose of this repository is to highlight my ability to:
    - Apply text and image processing techniques for enhanced data analysis
    - Train basic machine learning models 
 
-
 ## Contents
    - Penguins App: Interactive Data Exploration
    - 2008 Olympic Medalists: Data Analysis
@@ -24,13 +23,13 @@ The purpose of this repository is to highlight my ability to:
 
 ![Penguins](basic%20streamlit%20app/Penguins1.png)
 
-**TLDR**: An interactive, Streamlit web app that allows users to explore and filter a dataset of penguins, providing an intuitive way to analyze different species and their characteristics.
+**TLDR**: An interactive, Streamlit web app that allows users to explore, filter, and visualize a dataset of penguins, providing an intuitive way to analyze different species and their characteristics.
 
-**Description**: The Penguins App is a user-friendly tool that displays a dataset of penguins and allows users to filter by species for a more focused analysis. Upon launching, the app initially presents the entire dataset, giving users a broad overview. With a simple dropdown menu, users can select a species, and the dataset dynamically updates to display only the relevant rows. This makes it easy to explore, compare, and analyze the different penguin species efficiently. 
+**Description**: The Penguins App is a user-friendly tool that displays a dataset of penguins and allows users to filter by species and island for a more focused analysis. Upon launching, the app initially presents the entire dataset, giving users a broad overview. With a simple dropdown menu, users can select a species and island, and the dataset dynamically updates to display only the relevant rows. This makes it easy to explore, compare, and analyze the different penguin species efficiently. Users can then view summary statistics pertaining to these filtered rows based on users' selections. Finally, to visualize the distribution of species, users can see a bar graph that breaks down the count of the different species present in the dataset. 
 
-**Skills**: This project involved building an interactive web application with Streamlit, integrating data manipulation techniques using Pandas, and ensuring a smooth user experience with dynamic filtering. Additionally, basic Python scripting was used to structure the app, enabling user-driven updates and selections.
+**Skills**: This project involved building an interactive app with Streamlit, integrating data manipulation techniques using Pandas, ensuring a smooth user experience with dynamic filtering, and basic data visualization using Matplotlib. 
 
-This project complements my overall portfolio by showcasing my ability to integrate data analysis with interactive web applications. It goes beyond traditional data wrangling and visualization by allowing users to dynamically explore and filter datasets. This highlights my ability to create practical, interactive tools that make data exploration more accessible.
+This project complements my overall portfolio by showcasing my ability to integrate data analysis with interactive applications. It goes beyond traditional data wrangling and visualization by allowing users to dynamically explore and filter datasets, and view summaries according to their filtering specifications. This highlights my ability to create practical, interactive tools that make data exploration more accessible.
 
 **Link to Repository** [Penguins Project](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/basic%20streamlit%20app)
 
@@ -38,7 +37,7 @@ This project complements my overall portfolio by showcasing my ability to integr
 
 ### 🏅 2008 Olympic Medalists: Data Analysis 🏅
 
-![medals](TidyData-Project/stock_medals.jpeg)
+![medals](TidyData-Project/stock_medals.png)
 
 **TLDR**: An in-depth analysis of the 2008 Olympic medalists, focusing on data cleaning, organization, aggregation, and visualization to uncover key insights about medal distribution across sports and genders.
 
@@ -72,7 +71,7 @@ I created this app as a way to combine two things I really love: data science an
 
 ![CoffeeShop](StreamlitAppFinal/Images/Coffeeshop.jpg)
 
-**TLDR:** City Sips is an interactive Streamlit app built for coffee shop owners or coffee enthusiasts! The app blends data visualization and machine learning to uncover consumer trends across three different New York store locations. However, these findings are relevant and applicable to many NYC natives!
+**TLDR:** City Sips is an interactive Streamlit app built for coffee shop owners or coffee enthusiasts! The app blends data visualization and machine learning to uncover consumer trends across three different New York store locations. While the data comes from three specific New York locations, the insights are broadly relevant to coffee lovers and business owners across the city
 
 **Description:** New York City is one of the busiest plaes in the world, making coffee a necessity for anyone living or working there! So many coffee shops exist across Manhattan, but the question remains if they are truly optimizing their business strategies. City Sips uses a dataset to draw real-world insights about NYC coffee consumption patterns. By using the sidebar navigation, users can apply their own filters to a variety of visaulziations, offering personalized insights on consumer and product trends. Further, by exploring the page with the linear regression machine learning mode, users can see what are the most important predictors for maximizing sales. Whether business owners or enthusiasts want to understand which products perform the best, when to restock inventory, or what neighborhoods generate the most traffic, the app offers a platform for brewing more strategic decisions. 
 
