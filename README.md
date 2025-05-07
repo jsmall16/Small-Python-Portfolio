@@ -10,7 +10,6 @@ The purpose of this repository is to highlight my ability to:
    - Create advanced data visualizations to communicate insights
    - Use data wrangling techniques to clean and transform untidy datasets
    - Work with intermediate data structures
-   - Query databases to extract meaningful information
    - Apply text and image processing techniques for enhanced data analysis
    - Train basic machine learning models 
 
@@ -19,6 +18,7 @@ The purpose of this repository is to highlight my ability to:
    - Penguins App: Interactive Data Exploration
    - 2008 Olympic Medalists: Data Analysis
    - Taylor Swift's Lyrical Legacy: Custom NER + Visual Insights
+   - City Sips: NYC Coffee Sales App
 
 ### 🐧 Penguins App: Interactive Data Exploration 🐧
 
@@ -38,7 +38,7 @@ This project complements my overall portfolio by showcasing my ability to integr
 
 ### 🏅 2008 Olympic Medalists: Data Analysis 🏅
 
-![Olympics Graph](TidyData-Project/Beijing_2008.png)
+![medals](TidyData-Project/stock_medals.jpeg)
 
 **TLDR**: An in-depth analysis of the 2008 Olympic medalists, focusing on data cleaning, organization, aggregation, and visualization to uncover key insights about medal distribution across sports and genders.
 
@@ -50,6 +50,7 @@ This project complements my overall portfolio by demonstrating my ability to cle
 
 **Link to Repository** [Tidy Data Project](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/TidyData-Project) 
 
+---
 
 ### 🎤 Taylor Swift's Lyrical Legacy: Custom NER + Visual Insights 🎤
 
@@ -65,3 +66,18 @@ I created this app as a way to combine two things I really love: data science an
 
 **Link to Repository** [NER Streamlit App](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/NERStreamlitApp) 
 
+---
+
+### ☕ City Sips: NYC Coffee Sales App ☕
+
+![CoffeeShop](StreamlitAppFinal/Images/Coffeeshop.jpg)
+
+**TLDR:** City Sips is an interactive Streamlit app built for coffee shop owners or coffee enthusiasts! The app blends data visualization and machine learning to uncover consumer trends across three different New York store locations. However, these findings are relevant and applicable to many NYC natives!
+
+**Description:** New York City is one of the busiest plaes in the world, making coffee a necessity for anyone living or working there! So many coffee shops exist across Manhattan, but the question remains if they are truly optimizing their business strategies. City Sips uses a dataset to draw real-world insights about NYC coffee consumption patterns. By using the sidebar navigation, users can apply their own filters to a variety of visaulziations, offering personalized insights on consumer and product trends. Further, by exploring the page with the linear regression machine learning mode, users can see what are the most important predictors for maximizing sales. Whether business owners or enthusiasts want to understand which products perform the best, when to restock inventory, or what neighborhoods generate the most traffic, the app offers a platform for brewing more strategic decisions. 
+
+**Skills:** This project showcases my skills in exploratory data analysis, machine learning (specifically, linear regression), and Streamlit app development. My goal was to make an interactive user experience that would create more tailored insights. 
+
+This complements my overall coding portfolio by bringing forth elements of practicality, which any business exectuive or coffee lover could enjoy. It makes a large dataset more accessible and customizable to drive insights. The goal of this app was to showcase how data-driven insights can inform business decision making.  
+
+**Link to repository:** [StreamlitAppFinal](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/StreamlitAppFinal)
