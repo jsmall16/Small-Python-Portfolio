@@ -38,7 +38,7 @@ This project complements my overall portfolio by showcasing my ability to integr
 
 ### 🏅 2008 Olympic Medalists: Data Analysis 🏅
 
-![Olympics Graph](TidyData-Project/Sport%20Medal%20Count.png)
+![Olympics Graph](TidyData-Project/Beijing_2008.png)
 
 **TLDR**: An in-depth analysis of the 2008 Olympic medalists, focusing on data cleaning, organization, aggregation, and visualization to uncover key insights about medal distribution across sports and genders.
 
@@ -57,7 +57,7 @@ This project complements my overall portfolio by demonstrating my ability to cle
 
 **TLDR:** An interactive Streamlit app that uses NLP and data visualization to explore Taylor Swift’s lyrics. Fans can upload lyrics, define custom entity patterns with spaCy’s EntityRuler, and analyze word counts across albums to uncover trends in her storytelling.
 
-**Description:** Taylor Swift has been telling stories through her lyrics for over 20 years, evolving across genres, eras, and emotions. This project brings her discography to life through data. Using custom Named Entity Recognition (NER) with spaCy, the app lets users highlight names, places, and motifs in her lyrics. You can define your own entities and visualize them instantly. On top of that, you can explore word count trends across albums to see how her writing style has grown over time. Whether you’re a Swiftie or a data nerd (or both!), this app makes lyrical analysis engaging and interactive.
+**Description:** Taylor Swift has been telling stories through her lyrics for over 20 years, evolving across genres, eras, and emotions. This project brings her discography to life through data. Using custom Named Entity Recognition (NER) with spaCy, the app lets users highlight names, places, and motifs in her lyrics. You can define your own entities and visualize them instantly (meant for dark mode users!). On top of that, you can explore word count trends across albums to see how her writing style has grown over time. Whether you’re a Swiftie or a data nerd (or both!), this app makes lyrical analysis engaging and interactive.
 
 **Skills:** This project highlights my skills in NLP (spaCy), Streamlit app development, and data visualization with Matplotlib and Seaborn. I designed it to be user-friendly, insightful, and fun!
 
