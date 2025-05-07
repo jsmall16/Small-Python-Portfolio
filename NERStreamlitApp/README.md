@@ -99,6 +99,18 @@ streamlit run Home.py
    
 ---
 
+## 👤 Accessibility Notes
+
+This app is best utilized with dark mode viewing. The display and visual contrast settings were designed with dark mode in mind.  
+
+For the best user experience:
+- Enable dark mode in your system or browser
+- To do so in Streamlit Community Cloud:
+  - Click the three dots
+  - Go to Settings
+  - Go to "Choose app theme, colors and fonts"
+  - Select "Dark"
+---
 ## 💡 Sources & Acknowledgements
 
 ### Data
