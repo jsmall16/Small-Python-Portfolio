@@ -107,8 +107,8 @@ ax.set_title("Actual vs. Predicted Total Sales")
 st.pyplot(fig)
 
 st.markdown(f"""
-As we can see, the model we deployed for this data performed well, explaining around **{r2:.2%}** of the variance in sales. 
-Therefore, it serves as a useful model for forecasting when these coffee shops will be the most successful. 
+This model explains around **{r2:.2%}** of the variance in sales. Therefore, it serves as a useful model for forecasting 
+when these coffee shops will be the most successful. 
 """)
 
 # Extracts the coefficients and sorts them in order of importance (influence) on the predictive model
@@ -134,7 +134,7 @@ st.pyplot(fig_imp2)
 st.markdown("### What’s Brewing in Sales Trends? ☕")
 
 st.write("""
-        The default data shows that higher-priced drinks like Drinking Chocolate, Teas, and Coffees are the best-performing items that 
+        The **default data** shows that higher-priced drinks like Drinking Chocolate, Teas, and Coffees are the best-performing items that 
         ultimately drive the most sales. Saturdays in Lower Manhattan see larger transactions, possibly due to the nature
         of the weekend or tourists.
         """)
