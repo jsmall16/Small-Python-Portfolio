@@ -39,7 +39,7 @@ This project complements my overall portfolio by showcasing my ability to integr
 
 ### 🏅 2008 Olympic Medalists: Data Analysis 🏅
 
-<img src="TidyData-Project/Beijing_2008.png" alt="Olympics" width="1000">
+![Olympics](TidyData-Project/Olympic_cover.jpg)
 
 **TLDR**: An in-depth analysis of the 2008 Olympic medalists, focusing on data cleaning, organization, aggregation, and visualization to uncover key insights about medal distribution across sports and genders.
 
