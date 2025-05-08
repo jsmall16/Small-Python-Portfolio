@@ -57,6 +57,12 @@ The goal of implementing this model is to help the users identify what factors w
 
 <img src="Images/Influential.png" alt="Predictors" width="600">
 
+### 4️⃣ (Optional) User Upload 
+
+<img src="Images/File_upload.png" alt="Files" width="600">
+
+If users want even more personalized insights that deviate from the default data, they can upload their own data using this drop box!
+
 ## How to run the App
 
 You can try the app live here: [**Streamlit App Link**](https://small-python-portfolio-awq8bds5qjqdtabygs9qsv.streamlit.app/)  
