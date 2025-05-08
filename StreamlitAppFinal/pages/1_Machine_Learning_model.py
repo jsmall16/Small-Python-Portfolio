@@ -95,7 +95,7 @@ st.markdown("""
 *If you're not a coffee shop owner from NYC but want to use this Machine Learning model to aid your business,
 you can upload your own dataset using the sidebar to generate custom sales predictions.*
 
-Ensure it follows a similar format with columns like `unit_price`, `transaction_qty`, `store_location`, etc.
+Ensure it follows a similar format with columns like **unit_price, transaction_qty, store_location, etc.**
 """)
 
 # Creating a scatterplot to compare the actual testing data vs. the predictions 
