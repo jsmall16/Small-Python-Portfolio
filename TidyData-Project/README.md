@@ -1,5 +1,5 @@
 # 🏅 2008 Olympic Medalists: Data Analysis🏅
-<img src="Beijing_2008.png" alt="Olympics" width="1000">
+<img src="Olympic_rings.jpg" alt="Olympics" width="1000">
 Calling all sports fans and data lovers! This interactive data analysis dives into the 2008 Summer Olympics to uncover winning trends in gender, sports, and medal performance.
 
 ## Project Overview  
