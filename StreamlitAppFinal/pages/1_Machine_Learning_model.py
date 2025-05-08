@@ -8,16 +8,30 @@ from sklearn.model_selection import train_test_split # for splitting the data
 from sklearn.linear_model import LinearRegression # for modeling
 from sklearn.metrics import mean_squared_error, r2_score # for evaluating model performance 
 
-
+### How to run the model with a user's own data 
 # Sidebar file uploader for optional data upload
 st.sidebar.markdown("### Optional: Upload Your Own CSV")
 uploaded_file = st.sidebar.file_uploader("Upload a CSV file", type="csv")
 
-# Load data: Use uploaded file if available, else use default
+REQUIRED_COLUMNS = [
+    'unit_price', 'transaction_qty', 'store_location', 
+    'product_category', 'day_of_week', 'hour'
+] ### These are the columns we are using in our model, and therefore they must be present in any user uploaded dataset 
+
+# Handling errors for uploading user's own data 
 if uploaded_file is not None:
-    coffee_data = pd.read_csv(uploaded_file)
-    st.sidebar.success("Using uploaded dataset.")
-else:
+    try:
+        uploaded_data = pd.read_csv(uploaded_file)  # Try to read the uploaded file as a CSV
+        if not all(col in uploaded_data.columns for col in REQUIRED_COLUMNS): # Check if all required columns are present in the uploaded data
+            # If any required column is missing, show an error and stop execution
+            st.error("Uploaded file is missing one or more required columns.")
+            st.stop() 
+        coffee_data = uploaded_data # If everything is fine, assign the uploaded data to the main variable
+        st.sidebar.success("Using uploaded dataset.")
+    except:
+        st.error("Sorry, there was an issue reading your file. Please make sure it's a valid CSV.")
+        st.stop() # If anything goes wrong while reading the file, show a general error
+else: # If no file is uploaded, load the default dataset
     coffee_data = pd.read_csv('StreamlitAppFinal/Data/coffee-shop-data.csv')
     st.sidebar.info("Using default City Sips dataset.")
 
@@ -76,11 +90,9 @@ critical to improving the customer experience. Using a linear regression model, 
 - Store Location
 - Product Category
 - Day of Week
-
-This model does not rely on quantity, allowing us to better understand the broader trends that drive sales.
 """)
 st.markdown("""
-*You can upload your own dataset using the sidebar to generate custom sales predictions.*  
+*If you would like more personalized insights, you can upload your own dataset using the sidebar to generate custom sales predictions.*  
 Ensure it follows a similar format with columns like `unit_price`, `transaction_qty`, `store_location`, etc.
 """)
 
@@ -95,7 +107,7 @@ st.pyplot(fig)
 
 st.markdown(f"""
 As we can see, the model we deployed for this data performed well, explaining around **{r2:.2%}** of the variance in sales. 
-Therefore, it serves as a useful modeling for forecasting when these coffee shops will be the most successful. 
+Therefore, it serves as a useful model for forecasting when these coffee shops will be the most successful. 
 """)
 
 # Extracts the coefficients and sorts them in order of importance (influence) on the predictive model
@@ -121,7 +133,7 @@ st.pyplot(fig_imp2)
 st.markdown("### What’s Brewing in Sales Trends? ☕")
 
 st.write("""
-        Higher-priced drinks like Drinking Chocolate, Teas, and Coffees are the best-performing items that 
+        The default data shows that higher-priced drinks like Drinking Chocolate, Teas, and Coffees are the best-performing items that 
         ultimately drive the most sales. Saturdays in Lower Manhattan see larger transactions, possibly due to the nature
         of the weekend or tourists.
         """)
@@ -131,5 +143,6 @@ st.write("""
          with Tuesdays and Sundays trailing behind.
          """)
 
-st.markdown("""### These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keep sales flowing.
+st.markdown("""**These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keep sales flowing. 
+            If you uploaded your own data, how did your model do?**
 """)
