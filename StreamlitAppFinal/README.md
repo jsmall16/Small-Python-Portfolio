@@ -2,6 +2,8 @@
 ![CoffeeShop](Images/Coffeeshop.jpg)
 Calling all coffee lovers and business owners! This interactive Streamlit app is brewed to perfection to meet all your data-driven business needs!
 
+---
+
 ## Project Overview 
 City Sips solves the problem of unclear sales patterns and inventory planning for coffee shop owners. It is an interactive Streamlit app that helps NYC coffee shop owners and enthusiasts alike to make smarter business decisions. This app will provide strategic insights into: 
 
@@ -10,9 +12,11 @@ City Sips solves the problem of unclear sales patterns and inventory planning fo
 - What time of day should inventory be the most stocked
 - ...and more!
 
+---
+
 ## Dataset Description
-This app uses the Maven Roasters: Coffee Shop Sales & Revenue Data from [Kaggle](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset/code). This dataset contains: 
-- Over 140,000 transactions collected from 3 different store locations:
+Source: [Kaggle - Maven Roasters: Coffee Shop Sales & Revenue Data](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset/code).
+- This dataset contains Over 140,000 transactions collected from 3 different store locations:
     - **Lower Manhattan, Hell's Kitchen, & Astoria**
 - Each transaction includes:
     - Store location
@@ -22,6 +26,8 @@ This app uses the Maven Roasters: Coffee Shop Sales & Revenue Data from [Kaggle]
  
 This dataset is critical for providing stakeholders with strategic insights to understand product performance and user behavior.
 
+---
+
 ## **Data Pre-Processing steps**
 
 To ensure that the data was ready for analysis, I performed a few different pre-processing steps:
@@ -29,6 +35,8 @@ To ensure that the data was ready for analysis, I performed a few different pre-
 - **Data Type Conversions** - verified that all numeric columns were classiied properly and converted them when needed
 - **Date Formatting** - transformed date and time columns into datetime formats to allow for extraction
 - **Text cleaning** - made sure column title casing was correct and removed trailing whitespaces to ensure consistency across columns
+
+---
 
 ## App Features 
 
@@ -64,6 +72,8 @@ The goal of implementing this model is to help the users identify what factors w
 
 If users want even more personalized insights that deviate from the default data, they can upload their own data using this drop box!
 
+---
+
 ## How to run the App
 
 You can try the app live here: [**Streamlit App Link**](https://small-python-portfolio-awq8bds5qjqdtabygs9qsv.streamlit.app/)  
@@ -77,30 +87,30 @@ Or, you can download the app locally. Follow these instructions to learn how to 
 - seaborn==0.13.2
 - scikit-learn==1.5.1
 
-To install them manually:
+To install them manually using pip:
 ```bash
 pip install streamlit pandas matplotlib seaborn scikit-learn
 ```
 To get started installing the app:
 
-1. Clone the repository:
+### **Step 1: Clone the Repository**
 ```bash
 git clone https://github.com/jsmall16/Small-Python-Portfolio.git
 ```
 
-2. Run this command to view the files in the project folder:
+### **Step 2: Run this command to view the files in the project folder**
 ```bash
 ls
 ```
-3. Move into the directory containing your Streamlit app
+### **Step 3: Move into the directory containing your Streamlit app**
 ```bash
 cd StreamlitAppFinal
 ```
-4. Launch the Streamlit app by running
+### **Step 4:  Launch the Streamlit app by running**
 ```bash
 streamlit run Home.py
 ```
-5. Once the app starts, your terminal will display a local URL. Click the link or copy and paste it into your web browser to start exploring the app.
+Once the app starts, your terminal will display a local URL. Click the link or copy and paste it into your web browser to start exploring the app.
    
 ---
 
