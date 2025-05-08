@@ -3,11 +3,12 @@
 Calling all coffee lovers and business owners! This interactive Streamlit app is brewed to perfection to meet all your data-driven business needs!
 
 ## Project Overview 
-City Sips is an interactive Streamlit app that helps NYC coffee shop owners and enthusiasts alike to make smarter business decisions. This app will provide strategic insights into: 
+City Sips solves the problem of unclear sales patterns and inventory planning for coffee shop owners. It is an interactive Streamlit app that helps NYC coffee shop owners and enthusiasts alike to make smarter business decisions. This app will provide strategic insights into: 
+
 - Which products generate the most revenue
 - What locations have the most sales
 - What time of day should inventory be the most stocked
-- ...And more!
+- ...and more!
 
 ## Dataset Description
 This app uses the Maven Roasters: Coffee Shop Sales & Revenue Data from [Kaggle](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset/code). This dataset contains: 
@@ -70,11 +71,11 @@ You can try the app live here: [**Streamlit App Link**](https://small-python-por
 Or, you can download the app locally. Follow these instructions to learn how to do so!
 
 ### Make sure you have the required libraries installed
-  - streamlit
-  - pandas
-  - matplotlib
-  - seaborn
-  - scikit-learn
+- pandas==2.2.3
+- streamlit==1.37.1
+- matplotlib==3.10.1
+- seaborn==0.13.2
+- scikit-learn==1.5.1
 
 To install them manually:
 ```bash
