@@ -92,7 +92,8 @@ critical to improving the customer experience. Using a linear regression model, 
 - Day of Week
 """)
 st.markdown("""
-*If you would like more personalized insights, you can upload your own dataset using the sidebar to generate custom sales predictions.*  
+*If you would like more personalized insights, you can upload your own dataset using the sidebar to generate custom sales predictions.*
+
 Ensure it follows a similar format with columns like `unit_price`, `transaction_qty`, `store_location`, etc.
 """)
 
@@ -143,6 +144,6 @@ st.write("""
          with Tuesdays and Sundays trailing behind.
          """)
 
-st.markdown("""**These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keep sales flowing. 
-            If you uploaded your own data, how did your model do?**
+st.markdown("""**These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keep sales flowing.**
 """)
+st.markdown("### ***If you uploaded your own data, how did your model do?***")
