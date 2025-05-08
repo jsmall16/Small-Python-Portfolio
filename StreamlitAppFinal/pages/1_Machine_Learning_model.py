@@ -105,17 +105,17 @@ coefficients.head(10).plot(kind='barh', color='gray', ax=ax_imp2)
 ax_imp2.set_title("Top 10 Negative Predictors")
 st.pyplot(fig_imp2)
 
-st.markdown("### So What’s Brewing in Sales Trends? ☕")
+st.markdown("### What’s Brewing in Sales Trends? ☕")
 
 st.write("""
-        Higher-priced drinks like Drinking Chocolate, Signature Teas, and Specialty Coffees are the best-performing items that 
-        ultimately drive the most sales. Saturdays in Lower Manhattan consistently see larger transactions, possibly due to the nature
+        Higher-priced drinks like Drinking Chocolate, Teas, and Coffees are the best-performing items that 
+        ultimately drive the most sales. Saturdays in Lower Manhattan see larger transactions, possibly due to the nature
         of the weekend or tourists.
         """)
 
 st.write("""
-         Meanwhile, Coffee Beans and Branded Merch tend to bring in smaller totals. There is also a bit of a midweek slump, with Tuesdays and Sundays
-         trailing behind.
+         Meanwhile, Coffee Beans and Branded Merch tend to bring in smaller totals. There is also a bit of a slump in the middle of the week,
+         with Tuesdays and Sundays trailing behind.
          """)
 
 st.markdown("""### These patterns help business owners plan smarter by accurately deciding when to stock up, what to feature, and how to keep sales flowing.
