@@ -17,7 +17,7 @@ coffee_data['transaction_time'] = pd.to_datetime(coffee_data['transaction_time']
 coffee_data['month'] = coffee_data['transaction_date'].dt.strftime('%B %Y')
 
 # This for loop looks at four columns in the dataset and standardizes the formatting across them
-# Text is converted to title case and trailing white spaces are removed 
+# Text is converted to title case and trailing white spaces are removed (to ensure consistency)
 for col in ['store_location', 'product_category', 'product_type', 'product_detail']:
     coffee_data[col] = coffee_data[col].str.title().str.strip()
 

@@ -23,7 +23,7 @@ The goal is to help coffee shop owners make more strategic business decisions.
 
 # Dataset description
 st.markdown("""### Coffee Trends from the Ground Up""")
-st.write("""This dataset includes over 140,000 transactions from three unique coffee shop locations across New York City: **Lower Manhattan**, **Hell’s Kitchen**, and **Astoria**.""")
+st.write("""This dataset includes over 140,000 transactions from three coffee shop locations across New York City: **Lower Manhattan**, **Hell’s Kitchen**, and **Astoria**.""")
 st.markdown("""
     Each transaction contains:
     -  A store location

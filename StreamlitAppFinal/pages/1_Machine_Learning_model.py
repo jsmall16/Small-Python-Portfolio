@@ -46,7 +46,7 @@ coffee_data['total_sales'] = coffee_data['unit_price'] * coffee_data['transactio
 coffee_data.dropna(subset=['unit_price', 'transaction_qty', 'store_location', 'product_category', 'day_of_week', 'hour'], inplace=True)
 
 # Keep numeric features separate
-numeric_features = coffee_data[['unit_price', 'hour']]
+numeric_features = coffee_data[['unit_price', 'hour']] # excluding transaction price for this model (just needed it for the calculations)
 
 # Converting categorical variables into dummy variables 
 categorical_features = pd.get_dummies(
@@ -73,8 +73,7 @@ model.fit(X_train, y_train)
 # Make predictions using the testing data
 y_pred = model.predict(X_test)
 
-# Evaluate model performance (mean squared error and r squared)
-mse = mean_squared_error(y_test, y_pred)
+# Evaluate model performance (r squared)
 r2 = r2_score(y_test, y_pred)
 
 # Preparing the streamlit app
@@ -112,7 +111,7 @@ This model explains around **{r2:.2%}** of the variance in sales. Therefore, it 
 when these coffee shops will be the most successful. 
 """)
 
-# Extracts the coefficients and sorts them in order of importance (influence) on the predictive model
+# Extracts the coefficients of predictors and sorts them in order of importance (influence) on the predictive model
 coefficients = pd.Series(model.coef_, index=X.columns).sort_values()
 
 st.markdown("### Most Influential Predictors")
