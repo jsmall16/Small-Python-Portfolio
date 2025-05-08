@@ -19,6 +19,8 @@ The purpose of this repository is to highlight my ability to:
    - Taylor Swift's Lyrical Legacy: Custom NER + Visual Insights
    - City Sips: NYC Coffee Sales App
 
+## At a Glance
+
 ### 🐧 Penguins App: Interactive Data Exploration 🐧
 
 ![Penguins](basic%20streamlit%20app/Penguins1.png)
@@ -73,10 +75,10 @@ I created this app as a way to combine two things I really love: data science an
 
 **TLDR:** City Sips is an interactive Streamlit app built for coffee shop owners or coffee enthusiasts! The app blends data visualization and machine learning to uncover consumer trends across three different New York store locations. While the data comes from three specific New York locations, the insights are broadly relevant to coffee lovers and business owners across the city
 
-**Description:** New York City is one of the busiest plaes in the world, making coffee a necessity for anyone living or working there! So many coffee shops exist across Manhattan, but the question remains if they are truly optimizing their business strategies. City Sips uses a dataset to draw real-world insights about NYC coffee consumption patterns. By using the sidebar navigation, users can apply their own filters to a variety of visaulziations, offering personalized insights on consumer and product trends. Further, by exploring the page with the linear regression machine learning mode, users can see what are the most important predictors for maximizing sales. Whether business owners or enthusiasts want to understand which products perform the best, when to restock inventory, or what neighborhoods generate the most traffic, the app offers a platform for brewing more strategic decisions. 
+**Description:** New York City is one of the busiest plaes in the world, making coffee a necessity for anyone living or working there! So many coffee shops exist across Manhattan, but the question remains if they are truly optimizing their business strategies. City Sips uses a dataset to draw real-world insights about NYC coffee consumption patterns. By using the sidebar navigation, users can apply their own filters to a variety of visaulziations, offering personalized insights on consumer and product trends. Further, by exploring the page with the linear regression machine learning model, users can upload their own data or use the default NYC data to see what are the most important predictors for maximizing sales. Whether business owners or enthusiasts want to understand which products perform the best, when to restock inventory, or what neighborhoods generate the most traffic, the app offers a platform for brewing more strategic decisions. 
 
 **Skills:** This project showcases my skills in exploratory data analysis, machine learning (specifically, linear regression), and Streamlit app development. My goal was to make an interactive user experience that would create more tailored insights. 
 
-This complements my overall coding portfolio by bringing forth elements of practicality, which any business exectuive or coffee lover could enjoy. It makes a large dataset more accessible and customizable to drive insights. The goal of this app was to showcase how data-driven insights can inform business decision making.  
+This app complements my overall coding portfolio by showcasing practical, real-world applications of interactive Python development and machine learning model deployment using Streamlit. The app demonstrates my ability to clean and structure data, build regression models, and deploy them in a user-friendly way. It is the perfect blend!
 
 **Link to repository:** [StreamlitAppFinal](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/StreamlitAppFinal)
