@@ -9,8 +9,17 @@ from sklearn.linear_model import LinearRegression # for modeling
 from sklearn.metrics import mean_squared_error, r2_score # for evaluating model performance 
 
 
-# Load the dataset
-coffee_data = pd.read_csv('StreamlitAppFinal/Data/coffee-shop-data.csv')
+# Sidebar file uploader for optional data upload
+st.sidebar.markdown("### Optional: Upload Your Own CSV")
+uploaded_file = st.sidebar.file_uploader("Upload a CSV file", type="csv")
+
+# Load data: Use uploaded file if available, else use default
+if uploaded_file is not None:
+    coffee_data = pd.read_csv(uploaded_file)
+    st.sidebar.success("Using uploaded dataset.")
+else:
+    coffee_data = pd.read_csv('StreamlitAppFinal/Data/coffee-shop-data.csv')
+    st.sidebar.info("Using default City Sips dataset.")
 
 # Data cleaning 
 # Ensures unit price and quantity are numeric data types. If not, sets them as NaN
@@ -69,6 +78,10 @@ critical to improving the customer experience. Using a linear regression model, 
 - Day of Week
 
 This model does not rely on quantity, allowing us to better understand the broader trends that drive sales.
+""")
+st.markdown("""
+*You can upload your own dataset using the sidebar to generate custom sales predictions.*  
+Ensure it follows a similar format with columns like `unit_price`, `transaction_qty`, `store_location`, etc.
 """)
 
 # Creating a scatterplot to compare the actual testing data vs. the predictions 
