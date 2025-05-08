@@ -1,5 +1,6 @@
 # 🏅 2008 Olympic Medalists: Data Analysis🏅
 <img src="Beijing_2008.png" alt="Olympics" width="1000">
+Calling all sports fans and data lovers! This interactive data analysis dives into the 2008 Summer Olympics to uncover winning trends in gender, sports, and medal performance.
 
 ## Project Overview  
 The 2008 Summer Olympics brought together the world’s top athletes competing in various sports, earning gold, silver, and bronze medals for their performances.  
@@ -43,7 +44,8 @@ After cleansing, here are the column names in the dataset:
 - Analyzed medal distribution by gender
 - Focused on Athletics as the highest-medal sport
 ---
-## Data Visualization 
+## Notebook Features
+### Visualizations
 During my analysis, I discovered several compelling insights that reveal interesting trends and patterns:
 
 ### Overall Medal Distribution
@@ -102,8 +104,15 @@ Packages used in this project:
 
 ---
 
-## Acknowledgments & References  
-For further reading: 
-- Pandas Cheat Sheet: [Link](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
-- Tidy Data Principles: [Link](https://vita.had.co.nz/papers/tidy-data.pdf)
+## 💡 Sources & Acknowledgements
+
+### Data
+
+- [OlympicsGoNUTS 2008 Dataset](https://edjnet.github.io/OlympicsGoNUTS/2008/)
+
+### Documentation 
+
+- Pandas Cheat Sheet: [Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+- Tidy Data Principles: [Tidy Data Principles](https://vita.had.co.nz/papers/tidy-data.pdf)
+
 
