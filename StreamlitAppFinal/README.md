@@ -23,6 +23,11 @@ This dataset is critical for providing stakeholders with strategic insights to u
 
 ## **Data Pre-Processing steps**
 
+To ensure that the data was ready for analysis, I performed a few different pre-processing steps:
+- **Nulls** - removed missing values in columns that were critical to my analysis (price, quantity, etc)
+- **Data Type Conversions** - verified that all numeric columns were classiied properly and converted them when needed
+- **Date Formatting** - transformed date and time columns into datetime formats to allow for extraction
+- **Text cleaning** - made sure column title casing was correct and removed trailing whitespaces to ensure consistency across columns
 
 ## App Features 
 
