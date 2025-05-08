@@ -21,6 +21,26 @@ spaCy is a library in Python that is used to conduct Natural Language Processing
 - The EntityRuler allows users to build their own recognition rules and make the analysis more personalized
 
 ---
+## Dataset Description
+Source: [Taylor Swift Lyrics Dataset - ShaynaK (GitHub)](https://github.com/shaynak/taylor-swift-lyrics/blob/main/songs.csv)
+
+- This dataset contains Over 258 songs from over 11 studio and special-edition albums. 
+- Each song includes:
+    - Title
+    - Album
+    - Corresponding lyric
+
+---
+
+## **Data Pre-Processing Steps**
+
+To ensure that the data was ready for analysis, I performed a few different pre-processing steps:
+
+- **New columns** - Created a new column (word_count) that counts the number of words in each lyric
+- **Aggregations** - Filtered albums to only include Taylor's main discography and aggregated by album
+- **Text cleaning** - Renamed column names to be lowercase, removed trailing spaces to ensure consistency, and converted album titles to Title case 
+
+---
 
 ##  App Features 
 
@@ -65,11 +85,12 @@ You can try the app live here: [**Streamlit App Link**](https://small-python-por
 Or, you can download the app locally. Follow these instructions to learn how to do so!
 
 ### Make sure you have the required libraries installed
-  - streamlit==1.37.1
-  - spacy
-  - pandas==2.2.3
-  - matplotlib==3.10.1
-  - seaborn==0.13.2
+
+- matplotlib==3.10.1
+- pandas==2.2.3
+- seaborn==0.13.2
+- spacy==3.8.5
+- streamlit==1.37.1
 
 To install them manually using pip:
 ```bash
