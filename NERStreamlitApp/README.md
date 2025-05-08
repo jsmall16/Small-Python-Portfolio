@@ -5,7 +5,7 @@
 
 ---
 
-## 📁 Project Overview
+## Project Overview
 
 ### Purpose
 This app allows fans and analysts to:
@@ -21,17 +21,37 @@ spaCy is a library in Python that is used to conduct Natural Language Processing
 - The EntityRuler allows users to build their own recognition rules and make the analysis more personalized
 
 ---
+## Dataset Description
+Source: [Taylor Swift Lyrics Dataset - ShaynaK (GitHub)](https://github.com/shaynak/taylor-swift-lyrics/blob/main/songs.csv)
 
-## 🔧 App Features 
+- This dataset contains Over 258 songs from over 11 studio and special-edition albums. 
+- Each song includes:
+    - Title
+    - Album
+    - Corresponding lyric
 
-## Visualize Total Word Count per Album
+---
+
+## **Data Pre-Processing Steps**
+
+To ensure that the data was ready for analysis, I performed a few different pre-processing steps:
+
+- **New columns** - Created a new column (word_count) that counts the number of words in each lyric
+- **Aggregations** - Filtered albums to only include Taylor's main discography and aggregated by album
+- **Text cleaning** - Renamed column names to be lowercase, removed trailing spaces to ensure consistency, and converted album titles to Title case 
+
+---
+
+##  App Features 
+
+### 1️⃣ Visualize Total Word Count per Album
 
 ![TSDATA](TSDATA.png)
 
 This bar chart shows the total word count for each of Taylor Swift’s main studio albums, arranged in chronological order. It highlights how her lyrical volume has evolved over time, with a noticeable peak in Red (Taylor’s Version) and The Tortured Poets Department. Albums like Folklore and Taylor Swift feature more concise writing, while 1989 and Midnights strike a nice balance in songwriting length. Each bar is color-coded to reflect the aesthetic of its corresponding era, offering a data-driven, stylistic look at Taylor’s discography.
 
 
-## Custom Named Entity Recognition 
+### 2️⃣ Custom Named Entity Recognition 
 - Add your own entity labels and keyword patterns (ex- "James" under "LOVE_INTEREST")
 - Upload .txt files, paste in your own lyrics, or use the sample lyrics provided
 - Visualize output with entities highlighted using spaCy’s displacy
@@ -58,44 +78,45 @@ Using the sample lyrics, this is what the output may look like, depending on the
 ![DISPLACY](SpaCy_display.png)
 
 ---
-## 💻 How to run the App
+## How to run the App
 
 You can try the app live here: [**Streamlit App Link**](https://small-python-portfolio-tswift-ner.streamlit.app/)  
 
 Or, you can download the app locally. Follow these instructions to learn how to do so!
 
 ### Make sure you have the required libraries installed
-  - streamlit
-  - spacy
-  - pandas
-  - matplotlib
-  - seaborn
 
-To install them manually:
+- matplotlib==3.10.1
+- pandas==2.2.3
+- seaborn==0.13.2
+- spacy==3.8.5
+- streamlit==1.37.1
+
+To install them manually using pip:
 ```bash
 pip install streamlit spacy pandas matplotlib seaborn
 python -m spacy download en_core_web_sm
 ```
 To get started installing the app:
 
-1. Clone the repository:
+### **Step 1: Clone the Repository**
 ```bash
 git clone https://github.com/jsmall16/Small-Python-Portfolio.git
 ```
 
-2. Run this command to view the files in the project folder:
+### **Step 2: Run this command to view the files in the project folder**
 ```bash
 ls
 ```
-3. Move into the directory containing your Streamlit app
+### **Step 3: Move into the directory containing your Streamlit app**
 ```bash
 cd NERStreamlitApp
 ```
-4. Launch the Streamlit app by running
+### **Step 4:  Launch the Streamlit app by running**
 ```bash
 streamlit run Home.py
 ```
-5. Once the app starts, your terminal will display a local URL. Click this link or copy and paste it into your web browser to start exploring the app.
+Once the app starts, your terminal will display a local URL. Click this link or copy and paste it into your web browser to start exploring the app.
    
 ---
 

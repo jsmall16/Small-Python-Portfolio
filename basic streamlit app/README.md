@@ -4,6 +4,8 @@
 
 Calling all penguin lovers! The Penguins App offers a clear, user-friendly way to explore penguin characteristics, making data analysis more accessible and engaging. It is the perfect tool for any data scientist or penguin enthusiast!
 
+---
+
 ## Project Overview
 
 This app allows users to filter through a dataset of penguins in an interactive way. Users can view the full dataset and then filter it by selecting a specific penguin species or island from a dropdown menu to display only relevant data. The app also provides data visualizations to make the data-exploration process more accessible to all penguin enthusiasts! 
@@ -13,11 +15,13 @@ This app will help users to develop an understanding of:
 - Species-specific traits
 - Habitat insights 
 
+---
 
 ## Dataset Description
 
-This app uses the [Palmer's Penguins Dataset](data/penguins.csv), where each row corresponds to a unique penguin and details their attributes, such as their:
+Source: [Palmer's Penguins Dataset](data/penguins.csv).
 
+Each row corresponds to a unique penguin and details their attributes, such as their:
 - Species
 - Island
 - Bill length (mm) 
@@ -28,6 +32,8 @@ This app uses the [Palmer's Penguins Dataset](data/penguins.csv), where each row
 - Year
 
 It contains all of the necessary features to prep users for their exploration into the world of penguins!
+
+---
 
 ## App Features 
 Let's explore some of the features in the app!
@@ -52,6 +58,7 @@ Finally, at the bottom of the app is a static visualization that helps to pictur
 
 <img src="Vis.png" alt="Visualization" width="600">
 
+---
 
 ## How to run the App
 
@@ -60,30 +67,30 @@ Finally, at the bottom of the app is a static visualization that helps to pictur
   - pandas - data analysis and manipulation 
   - matplotlib - data visualization
 
-To install them manually:
+To install them manually using pip:
 ```bash
 pip install streamlit pandas matplotlib 
 ```
 To get started installing the app:
 
-1. Clone the repository:
+### **Step 1: Clone the Repository**
 ```bash
 git clone https://github.com/jsmall16/Small-Python-Portfolio.git
 ```
 
-2. Run this command to view the files in the project folder:
+### **Step 2: Run this command to view the files in the project folder**
 ```bash
 ls
 ```
-3. Move into the directory containing your Streamlit app
+### **Step 3: Move into the directory containing your Streamlit app**
 ```bash
 cd basic streamlit app
 ```
-4. Launch the Streamlit app by running
+### **Step 4:  Launch the Streamlit app by running**
 ```bash
 streamlit run main.py
 ```
-5. Once the app starts, your terminal will display a local URL. Click the link or copy and paste it into your web browser to start exploring the app.
+Once the app starts, your terminal will display a local URL. Click the link or copy and paste it into your web browser to start exploring the app.
    
 ---
 
