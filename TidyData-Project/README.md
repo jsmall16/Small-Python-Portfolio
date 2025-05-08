@@ -1,5 +1,5 @@
 # 🏅 2008 Olympic Medalists: Data Analysis🏅
-![Olympics](Beijing_2008.png)
+<img src="Beijing_2008.png" alt="Olympics" width="1000">
 
 ## Project Overview  
 The 2008 Summer Olympics brought together the world’s top athletes competing in various sports, earning gold, silver, and bronze medals for their performances.  
