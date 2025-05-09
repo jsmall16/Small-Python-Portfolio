@@ -48,17 +48,17 @@ After cleansing, here are the column names in the dataset:
 ### Visualizations
 During my analysis, I discovered several compelling insights that reveal interesting trends and patterns:
 
-### Overall Medal Distribution
+### 1️⃣ Overall Medal Distribution
 ![1stvis](Overall%20Medal%20Distribution.png)
 
 This pie chart illustrates the overall medal distribution, with gold medals accounting for 35.6%, silver medals at 33.1%, and bronze medals at 31.3%. The data suggests a relatively balanced distribution among the three medal types, with gold being the most awarded.
 
-### Medal County by Sport
+### 2️⃣ Medal Count by Sport
 ![2ndvis](Sport%20Medal%20Count.png)
 
 This bar chart showcases the top 10 sports by total medal count in the 2008 Olympics, with athletics, rowing, and swimming leading the rankings. The distribution of gold, silver, and bronze medals varies across sports, with athletics and rowing securing the most medals overall.
 
-### Athletics Medal Count by Gender
+### 3️⃣ Athletics Medal Count by Gender
 ![3rdvis](Athletics%20Medal%20Count%20by%20Gender.png)
 
 This bar chart illustrates the Athletics medal count by gender, showing a fairly balanced distribution between male and female athletes. While silver medals were the most awarded for both genders, males received slightly more bronze medals and females received slightly more gold medals. 
@@ -89,7 +89,7 @@ This analysis provides a clear overview of how medals were distributed across sp
 
 ### **Step 4: Open and run the notebook**
 1. Open the 2008_olympic_medals.ipynb file from the Explorer.
-4. Click the "Run All" button or run each cell individually to see the code outputs.
+2. Click the "Run All" button or run each cell individually to see the code outputs.
 
 ### Dependencies
 Before running the notebook, ensure you have the following Python packages installed. You can install them using pip:

@@ -16,7 +16,7 @@ City Sips solves the problem of unclear sales patterns and inventory planning fo
 
 ## Dataset Description
 Source: [Kaggle - Maven Roasters: Coffee Shop Sales & Revenue Data](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset/code).
-- This dataset contains Over 140,000 transactions collected from 3 different store locations:
+- This dataset contains over 140,000 transactions collected from 3 different store locations:
     - **Lower Manhattan, Hell's Kitchen, & Astoria**
 - Each transaction includes:
     - Store location
@@ -28,11 +28,11 @@ This dataset is critical for providing stakeholders with strategic insights to u
 
 ---
 
-## **Data Pre-Processing steps**
+## **Data Pre-Processing Steps**
 
 To ensure that the data was ready for analysis, I performed a few different pre-processing steps:
 - **Nulls** - removed missing values in columns that were critical to my analysis (price, quantity, etc)
-- **Data Type Conversions** - verified that all numeric columns were classiied properly and converted them when needed
+- **Data Type Conversions** - verified that all numeric columns were classified properly and converted them when needed
 - **Date Formatting** - transformed date and time columns into datetime formats to allow for extraction
 - **Text cleaning** - made sure column title casing was correct and removed trailing whitespaces to ensure consistency across columns
 
@@ -52,7 +52,7 @@ This section allows users to interact with the data more closely to gain more pe
 
 <img src="Images/Filters.png" alt="Filters" width="600">
 
-There are many different visuals in this app that change dyanmically with user selections. These relate to product category, time of day, day of week, and store location. 
+There are many different visuals in this app that change dynamically with user selections. These relate to product category, time of day, day of week, and store location. 
 
 <img src="Images/Bar-graph.png" alt="Graph" width="600">
 
@@ -70,7 +70,7 @@ The goal of implementing this model is to help the users identify what factors w
 
 <img src="Images/File_upload.png" alt="Files" width="600">
 
-If users want even more personalized insights that deviate from the default data, they can upload their own data using this drop box!
+If users want even more personalized insights that deviate from the default data, they can upload their own data using this dropbox!
 
 ---
 

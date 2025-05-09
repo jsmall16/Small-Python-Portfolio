@@ -19,7 +19,7 @@ This app will help users to develop an understanding of:
 
 ## Dataset Description
 
-Source: [Palmer's Penguins Dataset](data/penguins.csv).
+Source: [Palmer Penguins Dataset](data/penguins.csv).
 
 Each row corresponds to a unique penguin and details their attributes, such as their:
 - Species
@@ -39,7 +39,7 @@ It contains all of the necessary features to prep users for their exploration in
 Let's explore some of the features in the app!
 
 ### 1️⃣ **View Entire Dataframe**
-Already loaded into the app, is a concise view of the entire dataset, allowing users to interact with the raw data data and perform their own preliminary explorations.
+Already loaded into the app is a concise view of the entire dataset, allowing users to interact with the raw data and perform their own preliminary explorations.
 
 <img src="Whole_dataset.png" alt="Full data" width="600">
 
@@ -54,7 +54,7 @@ Based on the filtering options the user chose, they can view some basic summary 
 <img src="Summaries.png" alt="Summaries" width="600">
 
 ### 4️⃣ Visualize!
-Finally, at the bottom of the app is a static visualization that helps to picture the distribution of species in this dataset, by displaying a bar chart that shows the count of each species. 
+Finally, at the bottom of the app is a static visualization that helps to picture the distribution of species in this dataset by displaying a bar chart that shows the count of each species. 
 
 <img src="Vis.png" alt="Visualization" width="600">
 
@@ -63,7 +63,7 @@ Finally, at the bottom of the app is a static visualization that helps to pictur
 ## How to run the App
 
 ### Make sure you have the required libraries installed
-  - streamlit - app visualization
+  - streamlit - app deployment
   - pandas - data analysis and manipulation 
   - matplotlib - data visualization
 
@@ -84,7 +84,7 @@ ls
 ```
 ### **Step 3: Move into the directory containing your Streamlit app**
 ```bash
-cd basic streamlit app
+cd basic\ streamlit\ app/
 ```
 ### **Step 4:  Launch the Streamlit app by running**
 ```bash
@@ -98,7 +98,7 @@ Once the app starts, your terminal will display a local URL. Click the link or c
 
 ### Data
 
-- [Palmer's Penguins Dataset](data/penguins.csv)
+- [Palmer Penguins Dataset](data/penguins.csv)
 
 ### Documentation 
 
