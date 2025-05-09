@@ -13,7 +13,7 @@ coffee_data['transaction_date'] = pd.to_datetime(coffee_data['transaction_date']
 # Converting the time column into a datetime object (formatted as hours,mins,sec) --> extracting only the time portion
 coffee_data['transaction_time'] = pd.to_datetime(coffee_data['transaction_time'], format='%H:%M:%S').dt.time
 
-# Extracting the month and year from the transaction_date column and creating a month column
+# Extracting the month and year from the transaction_date column and creating a new month column
 coffee_data['month'] = coffee_data['transaction_date'].dt.strftime('%B %Y')
 
 # This for loop looks at four columns in the dataset and standardizes the formatting across them

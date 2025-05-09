@@ -30,7 +30,7 @@ if uploaded_file is not None:
         st.sidebar.success("Using uploaded dataset.")
     except:
         st.error("Sorry, there was an issue reading your file. Please make sure it's a valid CSV.")
-        st.stop() # If anything goes wrong while reading the file, show a general error
+        st.stop() # If anything goes wrong while reading the file, show a general error and stop execution
 else: # If no file is uploaded, load the default dataset
     coffee_data = pd.read_csv('StreamlitAppFinal/Data/coffee-shop-data.csv')
     st.sidebar.info("Using default City Sips dataset.")
