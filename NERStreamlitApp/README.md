@@ -24,11 +24,11 @@ spaCy is a library in Python that is used to conduct Natural Language Processing
 ## Dataset Description
 Source: [Taylor Swift Lyrics Dataset - ShaynaK (GitHub)](https://github.com/shaynak/taylor-swift-lyrics/blob/main/songs.csv)
 
-- This dataset contains Over 258 songs from over 11 studio and special-edition albums. 
+- This dataset contains 258 songs from over 11 studio and special-edition albums. 
 - Each song includes:
     - Title
     - Album
-    - Corresponding lyric
+    - Corresponding lyrics
 
 ---
 
@@ -38,7 +38,7 @@ To ensure that the data was ready for analysis, I performed a few different pre-
 
 - **New columns** - Created a new column (word_count) that counts the number of words in each lyric
 - **Aggregations** - Filtered albums to only include Taylor's main discography and aggregated by album
-- **Text cleaning** - Renamed column names to be lowercase, removed trailing spaces to ensure consistency, and converted album titles to Title case 
+- **Text cleaning** - Renamed column names to be lowercase, removed trailing spaces to ensure consistency, and converted album titles to title case 
 
 ---
 
@@ -84,7 +84,7 @@ You can try the app live here: [**Streamlit App Link**](https://small-python-por
 
 Or, you can download the app locally. Follow these instructions to learn how to do so!
 
-### Make sure you have the required libraries installed
+### Make sure you have the required libraries installed:
 
 - matplotlib==3.10.1
 - pandas==2.2.3
