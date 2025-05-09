@@ -13,13 +13,14 @@ The purpose of this repository is to highlight my ability to:
    - Apply text and image processing techniques for enhanced data analysis
    - Train basic machine learning models 
 
-## Contents
-   - Penguins App: Interactive Data Exploration
-   - 2008 Olympic Medalists: Data Analysis
-   - Taylor Swift's Lyrical Legacy: Custom NER + Visual Insights
-   - City Sips: NYC Coffee Sales App
+## Contents at a Glance
 
-## At a Glance
+   - [Penguins App: Interactive Data Exploration](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/basic%20streamlit%20app) - An interactive app that lets users filter and visualize penguin species data to explore physical characteristics and habitat trends.
+   - [2008 Olympic Medalists: Data Analysis](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/TidyData-Project) - A data analysis notebook that cleans, aggregates, and visualizes Olympic medal data to uncover trends by sport, gender, and medal type.
+   - [Taylor Swift's Lyrical Legacy: Custom NER + Visual Insights](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/NERStreamlitApp) - A Streamlit app that uses NLP and visualizations to explore word trends and custom entity recognition across Taylor Swift’s discography.
+   - [City Sips: NYC Coffee Sales App](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/StreamlitAppFinal) - A multi-page app that combines EDA, interactive filters, and a predictive model to help coffee shop owners analyze sales and forecast performance.
+
+---
 
 ### 🐧 Penguins App: Interactive Data Exploration 🐧
 
