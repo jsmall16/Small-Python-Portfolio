@@ -59,8 +59,8 @@ with col3:
         default=coffee_data['product_category'].unique()
     )
 
-# Apply filters to dataset based on the users' selections
-# Creates a filtered dataframe that reflects the filtering of the users' selections
+# Apply filters to dataset based on the user's selections
+# Creates a filtered dataframe that reflects the filtering of the user's selections
 filtered_data = coffee_data[
     (coffee_data['month'] == selected_month) &
     (coffee_data['store_location'].isin(selected_locations)) &
@@ -153,4 +153,4 @@ ax_loc.set_xlabel("Store Location")
 ax_loc.set_ylabel("Revenue")
 st.pyplot(fig_loc)
 
-# Used data-to-viz to assist with the constuction of these plots 
+# Used data-to-viz to assist with the construction of these plots 

@@ -18,6 +18,7 @@ st.write("""
 This app is designed to help business owners and coffee lovers alike:
 - Boost sales by analyzing product trends 
 - Use predictive models to forecast future sales
+
 The goal is to help coffee shop owners make more strategic business decisions.
 """)
 

@@ -81,7 +81,7 @@ r2 = r2_score(y_test, y_pred)
 st.title("Predicting Coffee Shop Sales 📈")
 
 st.markdown("""
-The most important thing for any business owner is to forecast when they will have the most sales, 
+The most important thing for any business owner is to forecast when they will have the most sales 
 in order to ensure that they have the necessary staffing and supply to keep up with it. Knowing these trends can be
 critical to improving the customer experience. Using a linear regression model, this dashboard predicts total sales based on:
 - Unit Price
