@@ -80,6 +80,6 @@ I created this app as a way to combine two things I really love: data science an
 
 **Skills:** This project showcases my skills in exploratory data analysis, machine learning (specifically linear regression), and Streamlit app development. My goal was to make an interactive user experience that would create more tailored insights. 
 
-This app complements my overall coding portfolio by showcasing practical, real-world applications of interactive Python development and machine learning model deployment using Streamlit. The app demonstrates my ability to clean and structure data, build regression models, and deploy them in a user-friendly way. 
+This app complements my overall coding portfolio by showcasing practical, real-world applications of interactive Python development and machine learning model deployment using Streamlit. The app demonstrates my ability to clean and structure data, build regression models, and deploy them in a user-friendly way. As a business major and a coffee fanatic, this app is the perfect blend for me!
 
 **Link to repository:** [StreamlitAppFinal](https://github.com/jsmall16/Small-Python-Portfolio/tree/main/StreamlitAppFinal)
